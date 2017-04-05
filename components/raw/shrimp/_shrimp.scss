@@ -1,0 +1,20 @@
+.text-container {
+	max-width: 630px;
+}
+
+.center {
+	margin: 70px auto;
+}
+
+article {
+    margin: 0 1em;
+
+    img {
+		max-width: 110%;
+		margin: 0 -5%;	
+	}
+
+	h2 {
+		text-transform: uppercase;
+	}
+}
