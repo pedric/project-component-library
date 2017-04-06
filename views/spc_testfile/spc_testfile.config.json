@@ -1,0 +1,10 @@
+{
+	"status": "prototype",
+	"context": {
+		"spc_testfile": {
+			"heading": "This is the<br />spc_testfile<br />component",
+			"pitch": "(Data is being imported from spc_testfile.config.json)",
+			"content": "Place readme-info here..."
+		}
+	}
+}

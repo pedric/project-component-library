@@ -1,0 +1,31 @@
+{
+  "status": "wip",
+  "context": {
+      "icon": {
+        "name": "calendar"
+      }
+  },
+  "variants": [{
+    "name": "Checkmark",
+    "status": "ready",
+    "context": {
+      "icon": {
+        "name": "checkmark"
+      }
+    }
+  }, {
+    "name": "Info",
+    "context": {
+      "icon": {
+        "name": "info"
+      }
+    }
+  }, {
+    "name": "Warning",
+    "context": {
+      "icon": {
+        "name": "warning"
+      }
+    }
+  }]
+}

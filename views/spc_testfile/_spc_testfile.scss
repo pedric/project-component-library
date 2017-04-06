@@ -1,0 +1,51 @@
+$spc_testfile-color: rgba(0, 0, 0, 0.75);
+$spc_testfile-sunglasses: rgba(115, 35, 17, 0.2);
+
+div#spc_testfile {
+	position: relative;
+	height: 66vh;
+	min-height: 400px;
+
+	background-image: url('/img/spc_testfile.jpg');
+	background-position: center;
+	background-size: cover;
+
+	> div {
+		position: relative;
+    height: 100%;
+    background: $spc_testfile-sunglasses;
+		
+		> div {
+			position: absolute;
+			width: 40%;
+			max-width: 500px;
+			top: 10%;
+			left: 10%;
+
+			background: $spc_testfile-color;
+			padding: 20px;
+		
+			h1,
+			h6 {
+				text-transform: uppercase;
+				color: #fff;
+			}
+
+			h1 {
+				margin: 0 auto 5px;
+				font-size: 48px;
+			}
+
+			h6 {
+				margin: 5px auto;
+				font-weight: 100;
+			}
+
+			p {
+				font-weight: 100;
+				color: #fff;
+			}
+		}
+
+	}
+}
