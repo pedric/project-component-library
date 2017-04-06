@@ -1,9 +1,26 @@
 <div id="spc_testfile" data-module="spc_testfile" data-spc_testfile="Spc_testfile JS-module loaded!">
+	<article>
 	<div>
 		<div>
-			<h1>{{ spc_testfile.heading }}</h1>
-			<h6>{{ spc_testfile.pitch }}</h6>
-			<p>{{ spc_testfile.content }}</p>
+			<svg><a href="{{ icon.target }}"><use xlink:href="/icons/icons.svg#{{ icon.name }}"></use></a></svg>
+				<div>
+					<div>
+						<h1>{{ heading }}</h1>
+						<hr />
+						<h5>{{ author }} {{ date }}</h5>
+						<hr />
+						<p><strong>{{ ingress }}</strong></p>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
+		<div class="image-wrapper">
+			<img src="{{ image.url }}" alt="{{ image.alt }}" />
+			<p class="copyright">@{{ image.copyright }}</p>
+			<h6>{{ image.description }}</h6>
+		</div>
+		<div class="main-content">
+			<div>{{ content }}</div>
+		</div>
+	</article>
 </div>
