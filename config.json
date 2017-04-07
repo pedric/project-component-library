@@ -15,7 +15,7 @@
   },
   "fractal": {
     "project": {
-      "title": "Spacecraft starter"
+      "title": "Spacecraft Component Library"
     },
     "path": {
       "components": "views",
