@@ -2,7 +2,11 @@
 	<article>
 	<div>
 		<div>
-			<svg><a href="{{ icon.target }}"><use xlink:href="/icons/icons.svg#{{ icon.name }}"></use></a></svg>
+			<div class="icons-wrapper">
+				{% for icon in icons %}
+					<svg><a href="{{ icon.target }}"><use xlink:href="/icons/icons.svg#{{ icon.name }}"></use></a></svg>	
+				{% endfor %}
+			</div>
 				<div>
 					<div>
 						<h1>{{ heading }}</h1>

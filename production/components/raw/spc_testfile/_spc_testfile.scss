@@ -15,15 +15,6 @@ div#spc_testfile {
 
 	> article {
 
-	svg {
-		position: absolute;
-		top: 45px;
-		right: 45px;
-
-		width: 30px;
-		height: 30px;
-	}
-
 	.main-content {
 		display: inline-block;
 		width: 50%;
@@ -46,9 +37,24 @@ div#spc_testfile {
 			background: $example-bg-img;
 			background-position: center;
 			background-size: cover;
+			border: 10px solid #fff;
 
 			> div {
 				background: $example-bg-color;
+
+				.icons-wrapper {
+					position: absolute;
+					top: 45px;
+					right: 45px;
+					background: transparent;
+
+					svg {
+						display: inline;
+						width: 28px;
+				    height: 28px;
+				    margin: 0 5px;
+					}
+				}
 
 				> div {
 			  	background: $radial-light-sunglasses;
@@ -101,8 +107,9 @@ div#spc_testfile {
 		max-width: 720px;
 		margin: -100px auto 30px 10%;
 
-		border: 12px solid #fff;
+		border: 10px solid #fff;
 		border-radius: 2px;
+		box-sizing: border-box;
 	}
 
 	.image-wrapper img {
@@ -141,21 +148,47 @@ div#spc_testfile {
 
 		> article {
 
-			svg {
+			.icons-wrapper {
 				top: 20px;
 				right: 20px;
 			}
 
-			div:first-child > div > div > div {
-				width: 80%;
-				padding: 10% 10% 120px;
+			> div:first-child {
+
+				border: 8px solid #fff;
+
+				> div {
+
+					.icons-wrapper {
+						top: 45px;
+						left: 5%;
+					}
+
+						> div > div {
+							width: 90%;
+							padding: 95px 5% 120px;
+							max-width: none;
+					
+						p > strong {
+					    font-size: 20px;
+					    line-height: 25px;
+					    letter-spacing: -0.5px;
+					    word-spacing: 1.2px;
+						}
+					}
+				}
+			}
+
+			.main-content {
+				width: 90%;
+				padding: 0px 5% 120px;
 				max-width: none;
 			}
 		}
 
 		.image-wrapper {
-			width: 80%;
-			margin: -100px 10% 30px;
+			width: 90%;
+			margin: -100px 5% 30px;
 			border: 8px solid #fff;
 		}
 	}	

@@ -1,28 +1,59 @@
 export default class Spc_testfile {
-  constructor(element) {
+    constructor(element) {
 
-    // Log load verification
+    // Log load-verification for module
     let verification = element.getAttribute('data-spc_testfile');
     console.log(verification)
 
-    let h1 = element.querySelector('h1')
-
-    let size = 100
-    let h1Size = size - h1.innerHTML.length*1.9
-
     let headingSize = function() {
 
-    	let windowSize = window.innerWidth / 12
-    	let h1Size = windowSize - h1.innerHTML.length
+        // Set basic style to heading
+        let h1 = element.querySelector('h1')
+        h1.style.display = 'inline-block'
+        h1.style.fontSize = 48 + 'px'
 
-    	if(h1Size < 16) { h1Size = 16 }
+        // Get width of the content
+        // (Width for heading is supposed to line with
+        // the content width no matter what screensize)
+        // Safemargin prevents unwanted linebreaking in heading
+        let responsiveBreakingPoint = 800
+        let maxWidth = 530
+        let safeMargin = 20
 
-			h1.setAttribute('style', 'font-size:' + h1Size + 'px')
+    	let screenWidth = window.innerWidth
+        if(screenWidth > responsiveBreakingPoint) { 
+            screenWidth = (( screenWidth / 10 ) * 5) - safeMargin
+            if (screenWidth >= maxWidth) { screenWidth = maxWidth - safeMargin } 
+        } else {
+            screenWidth = ((screenWidth / 10) * 8) - safeMargin
+        }
+
+        // Element-, content width and fontsize to int
+        let x = h1.offsetWidth
+        let y = screenWidth
+        let z = parseInt(h1.style.fontSize.replace('px', ''))
+
+        // If heading is smaller than element
+        if(x < y) {
+            
+            for (var i = x; i < y; z++) {
+                h1.style.fontSize = z + 'px'
+                i = h1.offsetWidth
+            }
+
+        // If content is smaller than element
+        } else {
+
+            for (var i = x; i > y; z--) {
+                h1.style.fontSize = z + 'px'
+                i = h1.offsetWidth
+            }
+        }
     }
 
+    /* Init */
     headingSize()
-
     window.addEventListener('resize', headingSize)
 
-  }
+    }
 }
