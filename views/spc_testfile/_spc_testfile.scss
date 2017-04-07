@@ -1,6 +1,6 @@
 $radial-light-sunglasses: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
 $example-bg-img: url('/img/spc_testfile.jpg');
-$example-bg-color: rgba(0, 195, 200, 0.95);
+$example-theme-color: rgba(0, 195, 200, 0.95);
 
 div#spc_testfile {
 	position: relative;
@@ -26,10 +26,35 @@ div#spc_testfile {
 		line-height: 1.4em;
 		color: rgb(34,34,34);
 		margin: 0 0 30px;
-	}
 
-	h2 {
-		margin-top: 0;
+		h2 {
+			margin-top: 0;
+		}
+
+		h3 {
+			margin: 2em auto 0.4em;
+		}
+
+		p {
+			margin: 0 auto 1em;
+		}
+
+		pre {
+			color: $example-theme-color;
+			background: rgba(0,0,0,0.8);
+			padding: 4px 13px;
+			border-radius: 2px;
+		}
+
+		a {
+			color: $example-theme-color;
+			font-weight: normal;
+			text-decoration: none;
+
+			:hover {
+				text-decoration: underline;				
+			}
+		}
 	}
 	
 		> div:first-child {
@@ -40,7 +65,7 @@ div#spc_testfile {
 			border: 10px solid #fff;
 
 			> div {
-				background: $example-bg-color;
+				background: $example-theme-color;
 
 				.icons-wrapper {
 					position: absolute;
