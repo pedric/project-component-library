@@ -8,5 +8,8 @@
     "flightplan": "^0.6.14",
     "gulp": "^3.9.1",
     "spacecraft-projectversion": "git@github.com:pedric/spacecraft-projectversion.git"
+  },
+  "dependencies": {
+    "spc_testfile": "^2.1.2"
   }
 }
