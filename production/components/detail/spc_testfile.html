@@ -159,7 +159,7 @@
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"spc_testfile"</span> <span class="hljs-attr">data-module</span>=<span class="hljs-string">"spc_testfile"</span> <span class="hljs-attr">data-spc_testfile</span>=<span class="hljs-string">"Spc_testfile JS-module loaded!"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">article</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background: url(/img/spc_testfile.jpg);"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icons-wrapper"</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">"/icons/icons.svg#spc_testfile_twitter"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
@@ -241,7 +241,7 @@
     <code class="Code Code--lang-twig">
         <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"spc_testfile"</span> <span class="hljs-attr">data-module</span>=<span class="hljs-string">"spc_testfile"</span> <span class="hljs-attr">data-spc_testfile</span>=<span class="hljs-string">"Spc_testfile JS-module loaded!"</span>&gt;</span>
 	<span class="hljs-tag">&lt;<span class="hljs-name">article</span>&gt;</span>
-	<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background: url(</span></span></span><span class="hljs-template-variable">{{ image.url }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">);"</span>&gt;</span>
 		<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
 			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icons-wrapper"</span>&gt;</span>
 				</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">for</span></span> icon in icons %}</span><span class="xml">
@@ -320,13 +320,15 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
+                <option value="file-b1163280302a94d851fbf83dc40cecb5">_settings.scss</option>
+                
                 <option value="file-4ebdf1dcca3be9456edb95bda80a3699">_spc_testfile.scss</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-4ebdf1dcca3be9456edb95bda80a3699" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-b1163280302a94d851fbf83dc40cecb5" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -334,9 +336,38 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre><span class="hljs-variable">$radial-light-sunglasses</span>: radial-gradient(ellipse at center, rgba(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>) <span class="hljs-number">0%</span>, rgba(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0.4</span>) <span class="hljs-number">100%</span>);
-<span class="hljs-variable">$example-bg-img</span>: url(<span class="hljs-string">'/img/spc_testfile.jpg'</span>);
-<span class="hljs-variable">$example-theme-color</span>: rgba(<span class="hljs-number">0</span>, <span class="hljs-number">195</span>, <span class="hljs-number">200</span>, <span class="hljs-number">0.95</span>);
+                                <pre><span class="hljs-variable">$theme-color</span>: rgba(<span class="hljs-number">255</span>, <span class="hljs-number">195</span>, <span class="hljs-number">200</span>, <span class="hljs-number">0.95</span>);</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/spc_testfile/_settings.scss"><span>/components/raw/spc_testfile/_settings.scss</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">views/spc_testfile/_settings.scss</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">40 Bytes</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="FileBrowser-item" id="file-4ebdf1dcca3be9456edb95bda80a3699" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-SCSS FileBrowser-code">
+                                <pre>@<span class="hljs-keyword">import</span> <span class="hljs-string">"settings"</span>;
+<span class="hljs-variable">$radial-light-sunglasses</span>: radial-gradient(ellipse at center, rgba(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>) <span class="hljs-number">0%</span>, rgba(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0.4</span>) <span class="hljs-number">100%</span>);
+<span class="hljs-variable">$border</span>: <span class="hljs-number">10px</span> solid <span class="hljs-number">#fff</span>;
 
 <span class="hljs-selector-tag">div</span><span class="hljs-selector-id">#spc_testfile</span> {
 	<span class="hljs-attribute">position</span>: relative;
@@ -357,11 +388,16 @@
 		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">530px</span>;
 		<span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">12%</span> <span class="hljs-number">120px</span>;
 
-		<span class="hljs-attribute">font-weight</span>: <span class="hljs-number">100</span>;
+		<span class="hljs-attribute">font-weight</span>: lighter;
 		<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1em</span>;
 		<span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.4em</span>;
 		<span class="hljs-attribute">color</span>: rgb(<span class="hljs-number">34</span>,<span class="hljs-number">34</span>,<span class="hljs-number">34</span>);
 		<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">30px</span>;
+
+		<span class="hljs-selector-tag">img</span> {
+			<span class="hljs-attribute">width</span>: <span class="hljs-number">104%</span>;
+			<span class="hljs-attribute">margin</span>: <span class="hljs-number">1em</span> -<span class="hljs-number">2%</span>;
+		}
 
 		<span class="hljs-selector-tag">h2</span> {
 			<span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
@@ -376,14 +412,14 @@
 		}
 
 		<span class="hljs-selector-tag">pre</span> {
-			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$example-theme-color</span>;
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$theme-color</span>;
 			<span class="hljs-attribute">background</span>: rgba(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0.8</span>);
 			<span class="hljs-attribute">padding</span>: <span class="hljs-number">4px</span> <span class="hljs-number">13px</span>;
 			<span class="hljs-attribute">border-radius</span>: <span class="hljs-number">2px</span>;
 		}
 
 		<span class="hljs-selector-tag">a</span> {
-			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$example-theme-color</span>;
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$theme-color</span>;
 			<span class="hljs-attribute">font-weight</span>: normal;
 			<span class="hljs-attribute">text-decoration</span>: none;
 
@@ -395,13 +431,12 @@
 	
 		&gt; <span class="hljs-selector-tag">div</span>:first-child {
 
-			<span class="hljs-attribute">background</span>: <span class="hljs-variable">$example-bg-img</span>;
 			<span class="hljs-attribute">background-position</span>: center;
 			<span class="hljs-attribute">background-size</span>: cover;
-			<span class="hljs-attribute">border</span>: <span class="hljs-number">10px</span> solid <span class="hljs-number">#fff</span>;
+			<span class="hljs-attribute">border</span>: <span class="hljs-variable">$border</span>;
 
 			&gt; <span class="hljs-selector-tag">div</span> {
-				<span class="hljs-attribute">background</span>: <span class="hljs-variable">$example-theme-color</span>;
+				<span class="hljs-attribute">background</span>: <span class="hljs-variable">$theme-color</span>;
 
 				<span class="hljs-selector-class">.icons-wrapper</span> {
 					<span class="hljs-attribute">position</span>: absolute;
@@ -468,7 +503,7 @@
 		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">720px</span>;
 		<span class="hljs-attribute">margin</span>: -<span class="hljs-number">100px</span> auto <span class="hljs-number">30px</span> <span class="hljs-number">10%</span>;
 
-		<span class="hljs-attribute">border</span>: <span class="hljs-number">10px</span> solid <span class="hljs-number">#fff</span>;
+		<span class="hljs-attribute">border</span>: <span class="hljs-variable">$border</span>;
 		<span class="hljs-attribute">border-radius</span>: <span class="hljs-number">2px</span>;
 		<span class="hljs-attribute">box-sizing</span>: border-box;
 	}
@@ -505,6 +540,7 @@
 }
 
 @<span class="hljs-keyword">media</span> screen and (max-width: 800px) {
+	<span class="hljs-variable">$border</span>: <span class="hljs-number">8px</span> solid <span class="hljs-number">#fff</span>;
 	<span class="hljs-selector-tag">div</span><span class="hljs-selector-id">#spc_testfile</span> {
 
 		&gt; <span class="hljs-selector-tag">article</span> {
@@ -516,7 +552,7 @@
 
 			&gt; <span class="hljs-selector-tag">div</span>:first-child {
 
-				<span class="hljs-attribute">border</span>: <span class="hljs-number">8px</span> solid <span class="hljs-number">#fff</span>;
+				<span class="hljs-attribute">border</span>: <span class="hljs-variable">$border</span>;
 
 				&gt; <span class="hljs-selector-tag">div</span> {
 
@@ -544,13 +580,18 @@
 				<span class="hljs-attribute">width</span>: <span class="hljs-number">90%</span>;
 				<span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span> <span class="hljs-number">5%</span> <span class="hljs-number">120px</span>;
 				<span class="hljs-attribute">max-width</span>: none;
+
+				<span class="hljs-selector-tag">img</span> {
+					<span class="hljs-attribute">width</span>: <span class="hljs-number">112%</span>;
+					<span class="hljs-attribute">margin</span>: <span class="hljs-number">1em</span> -<span class="hljs-number">6%</span>;
+				}
 			}
 		}
 
 		<span class="hljs-selector-class">.image-wrapper</span> {
 			<span class="hljs-attribute">width</span>: <span class="hljs-number">90%</span>;
 			<span class="hljs-attribute">margin</span>: -<span class="hljs-number">100px</span> <span class="hljs-number">5%</span> <span class="hljs-number">30px</span>;
-			<span class="hljs-attribute">border</span>: <span class="hljs-number">8px</span> solid <span class="hljs-number">#fff</span>;
+			<span class="hljs-attribute">border</span>: <span class="hljs-variable">$border</span>;
 		}
 	}	
 } </pre>
