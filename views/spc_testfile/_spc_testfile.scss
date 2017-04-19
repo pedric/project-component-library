@@ -1,6 +1,6 @@
+@import "settings";
 $radial-light-sunglasses: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
-$example-bg-img: url('/img/spc_testfile.jpg');
-$example-theme-color: rgba(0, 195, 200, 0.95);
+$border: 10px solid #fff;
 
 div#spc_testfile {
 	position: relative;
@@ -21,11 +21,16 @@ div#spc_testfile {
 		max-width: 530px;
 		padding: 0 12% 120px;
 
-		font-weight: 100;
+		font-weight: lighter;
 		font-size: 1em;
 		line-height: 1.4em;
 		color: rgb(34,34,34);
 		margin: 0 0 30px;
+
+		img {
+			width: 104%;
+			margin: 1em -2%;
+		}
 
 		h2 {
 			margin-top: 0;
@@ -40,14 +45,14 @@ div#spc_testfile {
 		}
 
 		pre {
-			color: $example-theme-color;
+			color: $theme-color;
 			background: rgba(0,0,0,0.8);
 			padding: 4px 13px;
 			border-radius: 2px;
 		}
 
 		a {
-			color: $example-theme-color;
+			color: $theme-color;
 			font-weight: normal;
 			text-decoration: none;
 
@@ -59,13 +64,12 @@ div#spc_testfile {
 	
 		> div:first-child {
 
-			background: $example-bg-img;
 			background-position: center;
 			background-size: cover;
-			border: 10px solid #fff;
+			border: $border;
 
 			> div {
-				background: $example-theme-color;
+				background: $theme-color;
 
 				.icons-wrapper {
 					position: absolute;
@@ -132,7 +136,7 @@ div#spc_testfile {
 		max-width: 720px;
 		margin: -100px auto 30px 10%;
 
-		border: 10px solid #fff;
+		border: $border;
 		border-radius: 2px;
 		box-sizing: border-box;
 	}
@@ -169,6 +173,7 @@ div#spc_testfile {
 }
 
 @media screen and (max-width: 800px) {
+	$border: 8px solid #fff;
 	div#spc_testfile {
 
 		> article {
@@ -180,7 +185,7 @@ div#spc_testfile {
 
 			> div:first-child {
 
-				border: 8px solid #fff;
+				border: $border;
 
 				> div {
 
@@ -208,13 +213,18 @@ div#spc_testfile {
 				width: 90%;
 				padding: 0px 5% 120px;
 				max-width: none;
+
+				img {
+					width: 112%;
+					margin: 1em -6%;
+				}
 			}
 		}
 
 		.image-wrapper {
 			width: 90%;
 			margin: -100px 5% 30px;
-			border: 8px solid #fff;
+			border: $border;
 		}
 	}	
 } 

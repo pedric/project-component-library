@@ -10,6 +10,6 @@
     "spacecraft-projectversion": "git@github.com:pedric/spacecraft-projectversion.git"
   },
   "dependencies": {
-    "spc_testfile": "^2.1.2"
+    "spc_testfile": "^2.1.4"
   }
 }
