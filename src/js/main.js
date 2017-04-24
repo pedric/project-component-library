@@ -15,6 +15,6 @@ let setSiteTopMargin = function() {
 
 /* Init */
 setSiteTopMargin()
-window.addEventListener('resize', setSiteTopMargin, false)
+// window.addEventListener('resize', setSiteTopMargin, false)
 
 console.log(`main.js has loaded!`)
