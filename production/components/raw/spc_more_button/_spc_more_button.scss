@@ -1,0 +1,30 @@
+.spc_more_button {
+
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+
+	> div {
+		background: #000;
+		display: table;
+		margin: 5px auto;
+		padding: 8px 0;
+		width: 32.3334%;
+		text-align: center;
+
+		a {
+			text-decoration: none;
+			text-transform: uppercase;
+			color: #fff;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width:800px) {
+	.spc_more_button {
+		> div {
+			width: 98%;
+		}
+	}
+}

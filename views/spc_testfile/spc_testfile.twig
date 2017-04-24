@@ -1,12 +1,12 @@
 <div id="spc_testfile" data-module="spc_testfile" data-spc_testfile="Spc_testfile JS-module loaded!">
 	<article>
-	<div style="background: url({{ image.url }});">
+	<div style="background-image: url({{ image.url }});">
 		<div>
-			<div class="icons-wrapper">
+			<!-- <div class="icons-wrapper">
 				{% for icon in icons %}
 					<svg><a href="{{ icon.target }}"><use xlink:href="/icons/icons.svg#{{ icon.name }}"></use></a></svg>	
 				{% endfor %}
-			</div>
+			</div> -->
 				<div>
 					<div>
 						<h1>{{ heading }}</h1>
@@ -18,11 +18,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="image-wrapper">
+		<!-- <div class="image-wrapper">
 			<img src="{{ image.url }}" alt="{{ image.alt }}" />
 			<p class="copyright">@{{ image.copyright }}</p>
 			<h6>{{ image.description }}</h6>
-		</div>
+		</div> -->
 		<div class="main-content">
 			<div>{{ content }}</div>
 		</div>

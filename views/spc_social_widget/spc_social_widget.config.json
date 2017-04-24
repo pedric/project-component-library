@@ -1,0 +1,31 @@
+{
+	"status": "wip",
+	"context": {
+		"spc_social_widget": {
+			"button": {
+				"text": "us"
+			},
+			"menu": {
+				"heading": "<b>SAY HELLO!</b>",
+				"icons": {
+					"twitter": {
+						"name": "spc_testfile_twitter",
+						"target": "#"
+					},
+					"instagram": {
+						"name": "spc_testfile_instagram",
+						"target": "#"
+					},
+					"facebook": {
+						"name": "spc_testfile_facebook",
+						"target": "#"
+					}
+				},
+				"contact": {
+					"mail": "example@placeholder.tst",
+					"phone": "+46 70 XXX XX XX"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,60 @@
+$radial-light-sunglasses: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
+$border: 10px solid #fff;
+
+#spc_social_widget {
+
+	#social-button {
+		position: fixed;
+		top: 0;
+		right: 0;
+		background-color: #eaeaea;
+		height: 55px;
+		width: 55px;
+		border-bottom-left-radius: 100%;
+		z-index: 999;
+
+		p {
+			position: absolute;
+			top: 40%;
+			left: 60%;
+			text-transform: uppercase;
+			color: #000;
+			font-size: 12px;
+			text-align: center;
+			font-weight: bold;
+			margin: 0;
+			transform: translateX(-50%)translateY(-50%)rotate(45deg);
+		}
+	}
+
+	.icons-wrapper {
+		position: absolute;	
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: #000;
+		z-index: 998;
+
+		div {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%)translateY(-50%);
+
+			p {
+				font-size: 14px;
+				color: #fff;
+				text-align: center;
+		    margin: 0 auto 30px;
+			}
+
+			svg {
+				display: block;
+				width: 28px;
+		    height: 28px;
+		    margin: 0 auto 30px;
+			}
+		}
+	}
+}

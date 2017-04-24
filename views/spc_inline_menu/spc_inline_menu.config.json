@@ -1,0 +1,37 @@
+{
+	"status": "prototype",
+	"notes": "bout it bout it",
+	"context": {
+		"spc_inline_menu": {
+			"button": {
+				"name": "menu"
+			},
+			"items": {
+				"item1": {
+					"text": "blog",
+					"target": "www.example.se"
+				},
+				"item2": {
+					"text": "reviews",
+					"target": "www.example.se"
+				},
+				"item3": {
+					"text": "article",
+					"target": "www.example.se"
+				},
+				"item4": {
+					"text": "contact",
+					"target": "www.example.se"
+				},
+				"item5": {
+					"text": "about",
+					"target": "www.example.se"
+				},
+				"item6": {
+					"text": "social",
+					"target": "www.example.se"
+				}
+			}
+		}
+	}
+}

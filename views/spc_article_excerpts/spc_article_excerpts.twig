@@ -1,0 +1,16 @@
+<div id="spc_article_excerpts" data-module="spc_article_excerpts" data-spc_article_excerpts="spc_article_excerpts JS-module loaded!">
+	
+	{% for item in spc_article_excerpts.items %}
+		<article style="background-image:url({{ item.image }});">
+			<div>
+				<div>
+					<h2>{{ item.heading }}</h2>
+					<!--<p>{{ item.ingress }}</p>-->
+					<hr />
+					<h5>{{ item.author }} {{ item.date }}</h5>
+				</div>
+			</div>
+		</article>
+	{% endfor %}
+
+</div>

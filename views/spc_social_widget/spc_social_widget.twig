@@ -1,0 +1,18 @@
+<div id="spc_social_widget" data-module="spc_social_widget" data-spc_social_widget="Spc_social_widget loaded!">
+	<!-- Button -->
+	<div id="social-button">
+		<p>{{ spc_social_widget.button.text }}</p>
+	</div>
+	<!-- Display on toggle -->
+	<div class="icons-wrapper">
+		<div>
+			<p>{{ spc_social_widget.menu.heading }}</p>
+			{% for icon in spc_social_widget.menu.icons %}
+				<svg><a href="{{ icon.target }}"><use xlink:href="/icons/icons.svg#{{ icon.name }}"></use></a></svg>	
+			{% endfor %}
+			{% for item in menu.contact %}
+				<p>{{ item }}</p>
+			{% endfor %}
+		</div>
+	</div>
+</div>

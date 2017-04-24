@@ -1,0 +1,12 @@
+<div class="spc_inline_menu" data-module="spc_inline_menu" data-spc_inline_menu="Spc_inline_menu JS-module loaded!">
+	<nav>
+		<ul>
+			<li class="menuButton">{{ spc_inline_menu.button.name }}</li>
+		</ul>
+		<ul class="toggleMenu">
+			{% for item in spc_inline_menu.items %}
+				<li class="menuItem"><a href="{{ item.target }}">{{ item.text }}</a></li>
+			{% endfor %}
+		</ul>	
+	</nav>
+</div>

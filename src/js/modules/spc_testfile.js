@@ -38,6 +38,7 @@ export default class Spc_testfile {
             
             for (var i = x; i < y; z++) {
                 h1.style.fontSize = z + 'px'
+                h1.style.lineHeight = z + 'px'
                 i = h1.offsetWidth
             }
 
@@ -46,6 +47,7 @@ export default class Spc_testfile {
 
             for (var i = x; i > y; z--) {
                 h1.style.fontSize = z + 'px'
+                h1.style.lineHeight = z + 'px'
                 i = h1.offsetWidth
             }
         }
