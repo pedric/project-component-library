@@ -1,16 +1,24 @@
-<div id="spc_article_excerpts" data-module="spc_article_excerpts" data-spc_article_excerpts="spc_article_excerpts JS-module loaded!">
+<div class="spc_article_excerpts" data-module="spc_article_excerpts" data-spc_article_excerpts="spc_article_excerpts JS-module loaded!">
 	
 	{% for item in spc_article_excerpts.items %}
-		<article style="background-image:url({{ item.image }});">
-			<div>
+		<a href="#">
+			<article style="background-image:url({{ item.image }});">
 				<div>
-					<h2>{{ item.heading }}</h2>
-					<!--<p>{{ item.ingress }}</p>-->
-					<hr />
-					<h5>{{ item.author }} {{ item.date }}</h5>
+					<div><svg><use xlink:href="/icons/icons.svg#spc_article_excerpts"></use></svg></div>
+					<div>
+						<h2>{{ item.heading }}</h2>
+						<!--<p>{{ item.ingress }}</p>-->
+						<hr />
+						<h5>{{ item.author }} {{ item.date }}</h5>
+					</div>
+					<div>
+						{% for tag in item.tags %}
+							<div><p>{{ tag }}</p></div>
+						{% endfor %}
+					</div>
 				</div>
-			</div>
-		</article>
+			</article>
+		</a>
 	{% endfor %}
 
 </div>

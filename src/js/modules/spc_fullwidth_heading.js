@@ -1,55 +1,44 @@
 export default class Spc_fullwidth_heading {
     constructor(element) {
 
-    let headingSize = function() {
+        let that = this
 
-        // Set basic style to heading
-        let heading = element.querySelector('a')
-        heading.style.display = 'table'
-        heading.style.fontSize = 48 + 'px'
+        this.element = element
+        this.heading = element.querySelector('a')
 
-        // Get width of the content
-        // (Width for heading is supposed to line with
-        // the content width no matter what screensize)
-        // safeMargin prevents unwanted linebreaking in heading
-        let responsiveBreakingPoint = 800
-        let maxWidth = 1024
+        this.setHeadingSize()
+        window.addEventListener('resize', function() {
+            that.setHeadingSize()
+        })
+    }
+
+    setHeadingSize() {
+
+        let fontSize = parseFloat(window.getComputedStyle(this.heading, null).getPropertyValue('font-size'))
         let safeMargin = 27
-	    	let screenWidth = window.innerWidth
+    	
+        // Element width, content width and fontsize
+        let x = this.heading.offsetWidth
+        let y = this.element.offsetWidth - safeMargin
+        let z = fontSize
 
-	    	if(screenWidth > 1024) {
-	    		screenWidth = 1024 - safeMargin
-	    	} else {
-	    		screenWidth = screenWidth - safeMargin
-	    	}
-
-        // Element-, content width and fontsize to int
-        let x = heading.offsetWidth
-        let y = screenWidth
-        let z = parseInt(heading.style.fontSize.replace('px', ''))
-
-        // If heading is smaller than element
+        // If content is smaller than parentelement
         if(x < y) {
             
             for (var i = x; i < y; z++) {
-                heading.style.fontSize = z + 'px'
-                heading.style.lineHeight = z + 'px'
-                i = heading.offsetWidth
+                this.heading.style.fontSize = z + 'px'
+                this.heading.style.lineHeight = z + 'px'
+                i = this.heading.offsetWidth
             }
 
-        // If content is smaller than element
+        // If content is bigger than parentelement
         } else {
 
             for (var i = x; i > y; z--) {
-                heading.style.fontSize = z + 'px'
-                heading.style.lineHeight = z + 'px'
-                i = heading.offsetWidth
+                this.heading.style.fontSize = z + 'px'
+                this.heading.style.lineHeight = z + 'px'
+                i = this.heading.offsetWidth
             }
         }
-  }
-  /* Init */
-    headingSize()
-    window.addEventListener('resize', headingSize)
-
-}
+    }
 }

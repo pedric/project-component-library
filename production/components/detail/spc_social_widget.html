@@ -157,9 +157,9 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-c53b022d55610d87702830603ea4e4f3-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"spc_social_widget"</span> <span class="hljs-attr">data-module</span>=<span class="hljs-string">"spc_social_widget"</span> <span class="hljs-attr">data-spc_social_widget</span>=<span class="hljs-string">"Spc_social_widget loaded!"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"spc_social_widget"</span> <span class="hljs-attr">data-module</span>=<span class="hljs-string">"spc_social_widget"</span>&gt;</span>
     <span class="hljs-comment">&lt;!-- Button --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"social-button"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"social-button"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>us<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-comment">&lt;!-- Display on toggle --&gt;</span>
@@ -179,9 +179,9 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-c53b022d55610d87702830603ea4e4f3-panel-view">
     <code class="Code Code--lang-twig">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"spc_social_widget"</span> <span class="hljs-attr">data-module</span>=<span class="hljs-string">"spc_social_widget"</span> <span class="hljs-attr">data-spc_social_widget</span>=<span class="hljs-string">"Spc_social_widget loaded!"</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"spc_social_widget"</span> <span class="hljs-attr">data-module</span>=<span class="hljs-string">"spc_social_widget"</span>&gt;</span>
 	<span class="hljs-comment">&lt;!-- Button --&gt;</span>
-	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"social-button"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"social-button"</span>&gt;</span>
 		<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span></span><span class="hljs-template-variable">{{ spc_social_widget.button.text }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 	<span class="hljs-comment">&lt;!-- Display on toggle --&gt;</span>
@@ -263,66 +263,97 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre><span class="hljs-variable">$radial-light-sunglasses</span>: radial-gradient(ellipse at center, rgba(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>) <span class="hljs-number">0%</span>, rgba(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0.4</span>) <span class="hljs-number">100%</span>);
-<span class="hljs-variable">$border</span>: <span class="hljs-number">10px</span> solid <span class="hljs-number">#fff</span>;
+                                <pre>
+<span class="hljs-selector-class">.spc_social_widget</span> {
 
-<span class="hljs-selector-id">#spc_social_widget</span> {
-
-	<span class="hljs-selector-id">#social-button</span> {
+	<span class="hljs-selector-class">.social-button</span> {
 		<span class="hljs-attribute">position</span>: fixed;
-		<span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
-		<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
-		<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#eaeaea</span>;
-		<span class="hljs-attribute">height</span>: <span class="hljs-number">55px</span>;
-		<span class="hljs-attribute">width</span>: <span class="hljs-number">55px</span>;
-		<span class="hljs-attribute">border-bottom-left-radius</span>: <span class="hljs-number">100%</span>;
-		<span class="hljs-attribute">z-index</span>: <span class="hljs-number">999</span>;
+    <span class="hljs-attribute">top</span>: -<span class="hljs-number">50px</span>;
+    <span class="hljs-attribute">right</span>: -<span class="hljs-number">50px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fff</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">80px</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">120px</span>;
+    <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#000</span>;
+    <span class="hljs-attribute">z-index</span>: <span class="hljs-number">999</span>;
+    -ms-<span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">45deg</span>);
+    <span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">45deg</span>);
+    <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.2s</span>;
 
 		<span class="hljs-selector-tag">p</span> {
 			<span class="hljs-attribute">position</span>: absolute;
-			<span class="hljs-attribute">top</span>: <span class="hljs-number">40%</span>;
-			<span class="hljs-attribute">left</span>: <span class="hljs-number">60%</span>;
-			<span class="hljs-attribute">text-transform</span>: uppercase;
-			<span class="hljs-attribute">color</span>: <span class="hljs-number">#000</span>;
-			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;
-			<span class="hljs-attribute">text-align</span>: center;
-			<span class="hljs-attribute">font-weight</span>: bold;
-			<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
-			<span class="hljs-attribute">transform</span>: translateX(-<span class="hljs-number">50%</span>)translateY(-<span class="hljs-number">50%</span>)rotate(<span class="hljs-number">45deg</span>);
+	    <span class="hljs-attribute">top</span>: <span class="hljs-number">80%</span>;
+	    <span class="hljs-attribute">left</span>: <span class="hljs-number">62%</span>;
+	    <span class="hljs-attribute">text-transform</span>: uppercase;
+	    <span class="hljs-attribute">color</span>: <span class="hljs-number">#000</span>;
+	    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;
+	    <span class="hljs-attribute">text-align</span>: center;
+	    <span class="hljs-attribute">font-weight</span>: bold;
+	    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+	    -ms-<span class="hljs-attribute">transform</span>: translateX(-<span class="hljs-number">50%</span>) translateY(-<span class="hljs-number">50%</span>);
+	    <span class="hljs-attribute">transform</span>: translateX(-<span class="hljs-number">50%</span>) translateY(-<span class="hljs-number">50%</span>);
+		}
+
+		&amp;:hover {
+			<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#000</span>;
+		
+			<span class="hljs-selector-tag">p</span> {
+				<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+			}
 		}
 	}
 
+	<span class="hljs-selector-class">.fade-in-out</span> {
+		<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span> <span class="hljs-meta">!important</span>;
+	}
+
 	<span class="hljs-selector-class">.icons-wrapper</span> {
-		<span class="hljs-attribute">position</span>: absolute;	
+		<span class="hljs-attribute">position</span>: fixed;
+		<span class="hljs-attribute">width</span>: <span class="hljs-number">100vw</span>;
+		<span class="hljs-attribute">height</span>: <span class="hljs-number">100vh</span>;	
 		<span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
-		<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">right</span>: -<span class="hljs-number">100vw</span>;
 		<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
-		<span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
 		<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#000</span>;
 		<span class="hljs-attribute">z-index</span>: <span class="hljs-number">998</span>;
+		<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.5s</span>;
 
 		<span class="hljs-selector-tag">div</span> {
 			<span class="hljs-attribute">position</span>: absolute;
-			<span class="hljs-attribute">top</span>: <span class="hljs-number">50%</span>;
-			<span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
-			<span class="hljs-attribute">transform</span>: translateX(-<span class="hljs-number">50%</span>)translateY(-<span class="hljs-number">50%</span>);
+	    <span class="hljs-attribute">top</span>: <span class="hljs-number">50%</span>;
+	    <span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
+			<span class="hljs-attribute">transform</span>: translateX(-<span class="hljs-number">50%</span>) translateY(-<span class="hljs-number">50%</span>);
 
 			<span class="hljs-selector-tag">p</span> {
 				<span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
 				<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
 				<span class="hljs-attribute">text-align</span>: center;
-		    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto <span class="hljs-number">30px</span>;
+		    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto <span class="hljs-number">20px</span>;
+		    <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
 			}
 
 			svg {
 				<span class="hljs-attribute">display</span>: block;
 				<span class="hljs-attribute">width</span>: <span class="hljs-number">28px</span>;
 		    <span class="hljs-attribute">height</span>: <span class="hljs-number">28px</span>;
-		    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto <span class="hljs-number">30px</span>;
+		    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto <span class="hljs-number">20px</span>;
+		    <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
 			}
 		}
 	}
+
+@<span class="hljs-keyword">media</span> screen and (max-width: 800px) {
+		<span class="hljs-selector-class">.social-button</span> {
+			<span class="hljs-attribute">position</span>: fixed;
+	    <span class="hljs-attribute">top</span>: -<span class="hljs-number">54px</span>;
+	    <span class="hljs-attribute">right</span>: -<span class="hljs-number">54px</span>;
+	  }
+	}
 }
+
+
+
+
+
 </pre>
                             </code>
                             
@@ -339,7 +370,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1 KB</span>
+                    <span class="Meta-value">1.4 KB</span>
                 </li>
             </ul>
         </div>
@@ -822,7 +853,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>

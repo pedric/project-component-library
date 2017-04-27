@@ -2,15 +2,28 @@ export default class Spc_inline_menu {
   constructor(element) {
 
   	var that = this
-  	this.menu = element.getElementsByClassName('toggleMenu')
 
-		let setListItemWidth = function() {
-			let listItems = element.getElementsByClassName('menuItem')   
+  	this.element = element
+  	this.menu = element.getElementsByClassName('toggleMenu')[0]
+  	let menuButton = element.getElementsByClassName('menuButton')[0]
+
+  	/* Init */
+  	this.setListItemWidth()
+  	window.addEventListener('resize', function() {
+  		that.setListItemWidth()
+  	})
+
+	  menuButton.addEventListener('click', function() {
+	  	that.toggleMenu()
+	  })
+  }
+
+  setListItemWidth() {
 			
+			let listItems = this.element.getElementsByClassName('menuItem')   
 			let itemWidth = 100
-
 			let responsiveBreakingPoint = 1024
-
+			
 			if (window.innerWidth > responsiveBreakingPoint) {
 				itemWidth = itemWidth / listItems.length
 			}
@@ -20,21 +33,12 @@ export default class Spc_inline_menu {
 			}
 		}
 
-		let toggleMenu = function() {
-			if (that.menu[0].style.display == 'none') {
-				that.menu[0].style.display = 'block'
-				that.menu[0].style.height = window.innerHeight + 'px'
+		toggleMenu() {
+			
+			if (this.menu.classList.contains('fade-in-out')) {
+				this.menu.classList.remove('fade-in-out')
 			} else {
-				that.menu[0].style.height = 0 + 'px'
-				that.menu[0].style.display = 'none'
+				this.menu.classList.add('fade-in-out')
 			}
-		}
-
-		/* Init */
-  	setListItemWidth()
-  	window.addEventListener('resize', setListItemWidth)
-  	let menuButton = element.getElementsByClassName('menuButton')
-	  menuButton[0].addEventListener('click', toggleMenu)
-  
-  }
+		}  
 }

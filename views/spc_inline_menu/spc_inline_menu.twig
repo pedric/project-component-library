@@ -1,11 +1,20 @@
-<div class="spc_inline_menu" data-module="spc_inline_menu" data-spc_inline_menu="Spc_inline_menu JS-module loaded!">
+<div class="spc_inline_menu" data-module="spc_inline_menu">
 	<nav>
 		<ul>
 			<li class="menuButton">{{ spc_inline_menu.button.name }}</li>
 		</ul>
 		<ul class="toggleMenu">
 			{% for item in spc_inline_menu.items %}
-				<li class="menuItem"><a href="{{ item.target }}">{{ item.text }}</a></li>
+				<li class="menuItem">
+					<span>#</span><a href="{{ item.target }}">{{ item.text }}</a>
+					{% if item.items %}
+					<ul>
+						{% for submenuitem in item.items %}
+						<li><span>#</span><a href="#">{{ submenuitem }}</a></li>
+						{% endfor %}
+					</ul>
+					{% endif %}
+				</li>
 			{% endfor %}
 		</ul>	
 	</nav>

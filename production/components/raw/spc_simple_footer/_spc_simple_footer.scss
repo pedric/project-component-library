@@ -1,7 +1,13 @@
-$radial-light-sunglasses: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
-$border: 10px solid #fff;
+$spc_simple_footer_color: #000;
 
-#spc_simple_footer {
+/* Clearfix */
+.spc_simple_footer::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.spc_simple_footer {
 
 	float: left;
 	width: 100%;
@@ -9,17 +15,22 @@ $border: 10px solid #fff;
 	hr {
 		border: 0; 
 	  height: 1px;
-	  width: 100%;
-	  background: rgba(0, 0, 0, 0.1);
+	  width: 98%;
+	  margin: 0 1%;
+	  background: $spc_simple_footer_color;
 	} 
 
 	footer {
 
 		p {
-			color: #000;
-			font-size: 90%;
+			margin: 44px auto 55px;
+		}
+
+		span, p, a {
+			color: $spc_simple_footer_color;
+			font-size: 11px;
 			text-align: center;
-			margin-bottom: 60px;
+			font-weight: lighter;
 		}
 	}
 }

@@ -1,4 +1,4 @@
-<div id="spc_hero_article" data-module="spc_hero_article" data-spc_hero_article="spc_hero_article JS-module loaded!">
+<div class="spc_hero_article" data-module="spc_hero_article" data-spc_hero_article="spc_hero_article JS-module loaded!">
 		
 	<article style="background-image:url({{ spc_hero_article.image }});">
 		<div>
@@ -8,6 +8,12 @@
 				<hr />
 				<h5>{{ spc_hero_article.author }} {{ spc_hero_article.date }}</h5>
 			</div>
+			<div>
+				{% for tag in spc_hero_article.tags %}
+					<div><p>{{ tag }}</p></div>
+				{% endfor %}
+			</div>
+			<div></div>
 		</div>
 	</article>
 

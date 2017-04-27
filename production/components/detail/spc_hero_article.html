@@ -157,7 +157,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-06e1ae5760c9a2f5c51187682f0bc2a0-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"spc_hero_article"</span> <span class="hljs-attr">data-module</span>=<span class="hljs-string">"spc_hero_article"</span> <span class="hljs-attr">data-spc_hero_article</span>=<span class="hljs-string">"spc_hero_article JS-module loaded!"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"spc_hero_article"</span> <span class="hljs-attr">data-module</span>=<span class="hljs-string">"spc_hero_article"</span> <span class="hljs-attr">data-spc_hero_article</span>=<span class="hljs-string">"spc_hero_article JS-module loaded!"</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://images.genius.com/3c48a24a8c05ee4b6b07a2eada68a3d0.640x640x1.jpg);"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
@@ -167,6 +167,9 @@
                 <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Fredrik Larsson 2017-04-06<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
 
@@ -178,7 +181,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-06e1ae5760c9a2f5c51187682f0bc2a0-panel-view">
     <code class="Code Code--lang-twig">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"spc_hero_article"</span> <span class="hljs-attr">data-module</span>=<span class="hljs-string">"spc_hero_article"</span> <span class="hljs-attr">data-spc_hero_article</span>=<span class="hljs-string">"spc_hero_article JS-module loaded!"</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"spc_hero_article"</span> <span class="hljs-attr">data-module</span>=<span class="hljs-string">"spc_hero_article"</span> <span class="hljs-attr">data-spc_hero_article</span>=<span class="hljs-string">"spc_hero_article JS-module loaded!"</span>&gt;</span>
 		
 	<span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(</span></span></span><span class="hljs-template-variable">{{ spc_hero_article.image }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">);"</span>&gt;</span>
 		<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
@@ -188,6 +191,12 @@
 				<span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
 				<span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span></span><span class="hljs-template-variable">{{ spc_hero_article.author }}</span><span class="xml"> </span><span class="hljs-template-variable">{{ spc_hero_article.date }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
 			<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+				</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">for</span></span> tag in spc_hero_article.tags %}</span><span class="xml">
+					<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span></span><span class="hljs-template-variable">{{ tag }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endfor</span></span> %}</span><span class="xml">
+			<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 	<span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
 
@@ -239,12 +248,18 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre><span class="hljs-variable">$radial-light-sunglasses</span>: radial-gradient(ellipse at center, rgba(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>) <span class="hljs-number">0%</span>, rgba(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0.4</span>) <span class="hljs-number">100%</span>);
-<span class="hljs-variable">$border</span>: <span class="hljs-number">10px</span> solid <span class="hljs-number">#fff</span>;
+                                <pre><span class="hljs-variable">$sunglasses</span>: rgba(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0.07</span>);
+<span class="hljs-variable">$bg</span>: rgba(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0.4</span>);
+<span class="hljs-variable">$bg-hover</span>: rgba(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0.7</span>);
 
-<span class="hljs-selector-id">#spc_hero_article</span> {
+<span class="hljs-comment">/* Clearfix */</span>
+<span class="hljs-selector-class">.spc_hero_article</span>::after {
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">""</span>;
+  <span class="hljs-attribute">clear</span>: both;
+  <span class="hljs-attribute">display</span>: table;
+}
 
-	<span class="hljs-attribute">overflow</span>: auto;
+<span class="hljs-selector-class">.spc_hero_article</span> {
 
 	<span class="hljs-selector-tag">article</span> {
 		<span class="hljs-attribute">position</span>: relative;
@@ -267,22 +282,37 @@
 			<span class="hljs-attribute">position</span>: absolute;
 			<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
 			<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
-			<span class="hljs-attribute">background</span>: <span class="hljs-variable">$radial-light-sunglasses</span>;
+			<span class="hljs-attribute">background</span>: <span class="hljs-variable">$sunglasses</span>;
+			<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.2s</span>;
 
-			&gt; <span class="hljs-selector-tag">div</span> {
+			&amp;:hover {
+				<span class="hljs-attribute">background</span>: rgba(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>);
+				<span class="hljs-attribute">cursor</span>: pointer;
+			}
+
+			&amp;:hover &gt; <span class="hljs-selector-tag">div</span>:first-child, 
+			&amp;:hover &gt; <span class="hljs-selector-tag">div</span>:nth-child(2) <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">p</span> {
+				<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$bg</span>;
+			}
+			&amp;:hover &gt; <span class="hljs-selector-tag">div</span>:nth-child(3) {
+				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$bg</span>;
+			}
+
+			&gt; <span class="hljs-selector-tag">div</span>:first-child {
 				<span class="hljs-attribute">position</span>: absolute;
 				<span class="hljs-attribute">bottom</span>: <span class="hljs-number">10%</span>;
-		    <span class="hljs-attribute">left</span>: <span class="hljs-number">1.5%</span>;
+		    <span class="hljs-attribute">left</span>: <span class="hljs-number">5%</span>;
 		    -ms-<span class="hljs-attribute">transform</span>: translateX(<span class="hljs-number">0</span>);
 		    <span class="hljs-attribute">transform</span>: translateX(<span class="hljs-number">0</span>);
-		    <span class="hljs-attribute">width</span>: <span class="hljs-number">29.8%</span>;
-		    <span class="hljs-attribute">max-height</span>: <span class="hljs-number">80%</span>;
+		    <span class="hljs-attribute">width</span>: <span class="hljs-number">45%</span>;
+		    <span class="hljs-attribute">max-height</span>: <span class="hljs-number">60%</span>;
 		    <span class="hljs-attribute">overflow</span>: scroll;
 
 		    <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
 				<span class="hljs-attribute">background-color</span>: rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.4</span>);
 				<span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
 				<span class="hljs-attribute">box-sizing</span>: border-box;
+				<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.2s</span>;
 
 				<span class="hljs-selector-tag">h2</span>, <span class="hljs-selector-tag">h5</span> {
 					<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
@@ -299,6 +329,7 @@
 					<span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
 					<span class="hljs-attribute">font-weight</span>: normal;
 					<span class="hljs-attribute">text-align</span>: left;
+					<span class="hljs-attribute">line-height</span>: <span class="hljs-number">20px</span>;
 				}
 
 				<span class="hljs-selector-tag">h5</span> {
@@ -307,27 +338,63 @@
 					<span class="hljs-attribute">font-style</span>: italic;
 				}
 			}
+
+			&gt; <span class="hljs-selector-tag">div</span>:nth-child(2) {
+				<span class="hljs-attribute">position</span>: absolute;
+				<span class="hljs-attribute">top</span>: <span class="hljs-number">10%</span>;
+				<span class="hljs-attribute">left</span>: <span class="hljs-number">5%</span>;
+
+				<span class="hljs-selector-tag">div</span> {
+					<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto <span class="hljs-number">8px</span>;
+
+					<span class="hljs-selector-tag">p</span> {
+						<span class="hljs-attribute">display</span>: inline;
+						<span class="hljs-attribute">background-color</span>: rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.4</span>);
+						<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+						<span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;
+						<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+						<span class="hljs-attribute">padding</span>: <span class="hljs-number">4px</span> <span class="hljs-number">10px</span>;
+				    <span class="hljs-attribute">font-weight</span>: bold;
+				    <span class="hljs-attribute">text-transform</span>: uppercase;
+				    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">9px</span>;
+				    <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.2s</span>;
+
+				    &amp;::before {
+				    	<span class="hljs-attribute">content</span>: <span class="hljs-string">"#"</span>;
+				    }
+					}
+				}
+			}
+
+			&gt; <span class="hljs-selector-tag">div</span>:nth-child(3) {
+		    <span class="hljs-attribute">position</span>: absolute;
+		    <span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
+		    <span class="hljs-attribute">bottom</span>: <span class="hljs-number">10%</span>;
+		    <span class="hljs-attribute">height</span>: <span class="hljs-number">0</span>;
+		    <span class="hljs-attribute">width</span>: <span class="hljs-number">0</span>;
+		    <span class="hljs-attribute">border-top</span>: <span class="hljs-number">0px</span> solid transparent;
+		    <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">0px</span> solid transparent;
+		    <span class="hljs-attribute">border-left</span>: <span class="hljs-number">0px</span> solid;
+		    <span class="hljs-attribute">color</span>: rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.4</span>);
+		    <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.2s</span>;
+			}
 		}
 	}
-}
+	@<span class="hljs-keyword">media</span> screen and (max-width: 800px) {
+		
+		<span class="hljs-selector-tag">article</span> &gt; <span class="hljs-selector-tag">div</span> &gt; <span class="hljs-selector-tag">div</span>:first-child {
+			<span class="hljs-attribute">width</span>: <span class="hljs-number">66.6667%</span>;
+		}
 
-@<span class="hljs-keyword">media</span> screen and (max-width: 800px) {
-	
-	<span class="hljs-selector-id">#spc_hero_article</span> {
-
-		<span class="hljs-selector-tag">article</span> &gt; <span class="hljs-selector-tag">div</span> &gt; <span class="hljs-selector-tag">div</span> {
-			<span class="hljs-attribute">width</span>: <span class="hljs-number">49%</span>;
+		<span class="hljs-selector-tag">article</span> &gt; <span class="hljs-selector-tag">div</span> &gt; <span class="hljs-selector-tag">div</span>:nth-child(3) {
+			<span class="hljs-attribute">display</span>: none;
 		}
 	}
-}
 
-@<span class="hljs-keyword">media</span> screen and (max-width: 500px) {
-	
-	<span class="hljs-selector-id">#spc_hero_article</span> {
+	@<span class="hljs-keyword">media</span> screen and (max-width: 500px) {
 
-		<span class="hljs-selector-tag">article</span> &gt; <span class="hljs-selector-tag">div</span> &gt; <span class="hljs-selector-tag">div</span> {
+		<span class="hljs-selector-tag">article</span> &gt; <span class="hljs-selector-tag">div</span> &gt; <span class="hljs-selector-tag">div</span>:first-child {
 			<span class="hljs-attribute">width</span>: <span class="hljs-number">90%</span>;
-			<span class="hljs-attribute">margin-left</span>: <span class="hljs-number">5%</span>;
 			<span class="hljs-attribute">top</span>: initial;
 		}
 	}
@@ -347,7 +414,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.5 KB</span>
+                    <span class="Meta-value">2.6 KB</span>
                 </li>
             </ul>
         </div>
@@ -830,7 +897,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>

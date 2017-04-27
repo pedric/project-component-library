@@ -1,14 +1,20 @@
-$radial-light-sunglasses: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
-$border: 10px solid #fff;
+$radial-light-sunglasses: rgba(0,0,0,0.15);
+$black-transparent-bg: rgba(0, 0, 0, 0.4);
+$black-transparent-bg-hover: rgba(0, 0, 0, 0.7);
 
-#spc_article_excerpts {
+/* Clearfix */
+.spc_article_excerpts::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.spc_article_excerpts {
 
 	float: left;
 	width: 100%;
 	box-sizing: border-box;
-	overflow: auto;
 	margin: 1% auto;
-	// max-width: 1024px;
 
 	> div {
 		text-align: center;
@@ -31,13 +37,10 @@ $border: 10px solid #fff;
 		margin: 0 0 1% 1%;
 		height: 200px;
 
-		// border-radius: 50%;
-  	// overflow: hidden;
-
 		hr {
 			border: 0; 
 		  height: 1px;
-		  background: rgba(255, 255, 255, 0.2);
+		  background: rgba(255, 255, 255, 0.3);
 		  margin: 5px auto;
 		}
 
@@ -46,17 +49,50 @@ $border: 10px solid #fff;
 			width: 100%;
 			height: 100%;
 			background: $radial-light-sunglasses;
+			transition: all 0.4s;
+			z-index: 10;
 
-			> div {
+			&:hover { background: rgba(0,0,0,0.0); }
+
+			&:hover > div:nth-child(2), &:hover > div:nth-child(3) div p { background-color: $black-transparent-bg-hover; }
+
+			> div:nth-child(1):hover svg {
+    		opacity: 1;
+    	}
+
+			> div:nth-child(1) {
+	    	position: absolute;
+	    	width: 100%;
+	    	height: 100%;
+	    	top: 50%;
+	    	left: 50%;
+	    	transform: translateX(-50%)translateY(-50%);
+	    	z-index: 999;
+
+	    	svg {
+	    		opacity: 0;
+	    		position: absolute;
+		    	top: 50%;
+		    	left: 50%;
+		    	margin: -30px 0 0 -30px;
+	    		width: 60px;
+	    		height: 60px;
+	    		transform: rotate(0deg);
+	    		transition: all 0.1s;
+	    	}
+	    }
+
+			> div:nth-child(2) {
 				position: absolute;
 				width: 90%;
 				bottom: 10%;
 				left: 50%;
 				transform: translateX(-50%);
 
-				background-color: rgba(0, 0, 0, 0.4);
+				background-color: $black-transparent-bg;
 				padding: 10px;
 				box-sizing: border-box;
+				transition: all 0.4s;
 
 				h2, p, h5 {
 					color: #fff;
@@ -80,30 +116,59 @@ $border: 10px solid #fff;
 					font-style: italic;
 				}
 			}
+
+			> div:nth-child(3) {
+				position: absolute;
+				top: 10%;
+				left: 5%;
+
+				div {
+					margin: 0 auto 4px;
+
+					p {
+						display: inline;
+						background-color: $black-transparent-bg;
+						color: #fff;
+						font-size: 9px;
+						margin: 0;
+						padding: 4px 10px;
+				    font-weight: bold;
+				    text-transform: uppercase;
+				    border-radius: 9px;
+
+				    &::before {
+				    	content: "#";
+				    }
+					}
+				}
+			}
 		}
 	}
 }
 
 @media screen and (max-width: 800px) {
 	
-	#spc_article_excerpts {
+	.spc_article_excerpts {
 
-		article:last-child {
+		a:last-child article {
 				width: 98%;
+				margin: 0 0 1% 1%;
 			}
 
 		article {
 			width: 48.5%;
+			margin: 0 0 1% 1%;
 		}
 	}
 }
 
 @media screen and (max-width: 500px) {
 	
-	#spc_article_excerpts {
+	.spc_article_excerpts {
 
 		article {
 			width: 98%;
+			margin: 0 0 1% 1%;
 		}
 	}
 }

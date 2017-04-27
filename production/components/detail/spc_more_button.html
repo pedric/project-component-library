@@ -157,10 +157,10 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-cf73f421c83cef2cf349142027b2497e-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"spc_more_button"</span> <span class="hljs-attr">data-module</span>=<span class="hljs-string">"spc_more_button"</span> <span class="hljs-attr">data-spc_more_button</span>=<span class="hljs-string">"spc_more_button JS-module loaded!"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"spc_more_button"</span> <span class="hljs-attr">data-module</span>=<span class="hljs-string">"spc_more_button"</span> <span class="hljs-attr">data-spc_more_button</span>=<span class="hljs-string">"view more"</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>more<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>+<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
@@ -171,10 +171,10 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-cf73f421c83cef2cf349142027b2497e-panel-view">
     <code class="Code Code--lang-twig">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"spc_more_button"</span> <span class="hljs-attr">data-module</span>=<span class="hljs-string">"spc_more_button"</span> <span class="hljs-attr">data-spc_more_button</span>=<span class="hljs-string">"spc_more_button JS-module loaded!"</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"spc_more_button"</span> <span class="hljs-attr">data-module</span>=<span class="hljs-string">"spc_more_button"</span> <span class="hljs-attr">data-spc_more_button</span>=<span class="hljs-string">"view more"</span>&gt;</span>
 		
 	<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span></span><span class="hljs-template-variable">{{ spc_more_button.text }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>+<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
@@ -221,25 +221,68 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre><span class="hljs-selector-class">.spc_more_button</span> {
+                                <pre><span class="hljs-variable">$spc_more_button_bright</span>: <span class="hljs-number">#fff</span>;
+<span class="hljs-variable">$spc_more_button_dark</span>: <span class="hljs-number">#000</span>;
+
+<span class="hljs-comment">/* Clearfix */</span>
+<span class="hljs-selector-class">.spc_more_button</span>::after {
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">""</span>;
+  <span class="hljs-attribute">clear</span>: both;
+  <span class="hljs-attribute">display</span>: table;
+}
+
+<span class="hljs-selector-class">.spc_more_button</span> {
 
 	<span class="hljs-attribute">float</span>: left;
 	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto <span class="hljs-number">2%</span>;
 	<span class="hljs-attribute">box-sizing</span>: border-box;
 
 	&gt; <span class="hljs-selector-tag">div</span> {
-		<span class="hljs-attribute">background</span>: <span class="hljs-number">#000</span>;
+		<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
 		<span class="hljs-attribute">display</span>: table;
-		<span class="hljs-attribute">margin</span>: <span class="hljs-number">5px</span> auto;
-		<span class="hljs-attribute">padding</span>: <span class="hljs-number">8px</span> <span class="hljs-number">0</span>;
-		<span class="hljs-attribute">width</span>: <span class="hljs-number">32.3334%</span>;
-		<span class="hljs-attribute">text-align</span>: center;
 
-		<span class="hljs-selector-tag">a</span> {
+		<span class="hljs-selector-tag">button</span> {
+			<span class="hljs-attribute">position</span>: relative;
+			<span class="hljs-attribute">background</span>: <span class="hljs-variable">$spc_more_button_bright</span>;
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$spc_more_button_dark</span>;
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+			<span class="hljs-attribute">font-weight</span>: lighter;
 			<span class="hljs-attribute">text-decoration</span>: none;
 			<span class="hljs-attribute">text-transform</span>: uppercase;
-			<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
 			<span class="hljs-attribute">text-align</span>: center;
+			<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+			<span class="hljs-attribute">padding</span>: <span class="hljs-number">6px</span> <span class="hljs-number">28px</span>;
+			<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+			<span class="hljs-attribute">height</span>: <span class="hljs-number">33px</span>;
+			<span class="hljs-attribute">border</span>: none;
+			<span class="hljs-attribute">border-radius</span>: <span class="hljs-number">17px</span>;
+			<span class="hljs-attribute">box-sizing</span>: border-box;
+			<span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$spc_more_button_dark</span>;
+			<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.2s</span>;
+		}
+
+		:hover {
+			<span class="hljs-attribute">background</span>: <span class="hljs-variable">$spc_more_button_dark</span>;
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$spc_more_button_bright</span>;
+			<span class="hljs-attribute">cursor</span>: pointer;
+
+			<span class="hljs-selector-tag">span</span> {
+				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$spc_more_button_bright</span>;
+				<span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">360deg</span>);
+				<span class="hljs-attribute">font-weight</span>: bold;
+				<span class="hljs-attribute">border</span>: none;
+			}
+		}
+
+		<span class="hljs-selector-tag">span</span> {
+			<span class="hljs-attribute">position</span>: absolute;
+			<span class="hljs-attribute">top</span>: <span class="hljs-number">1px</span>;
+			<span class="hljs-attribute">left</span>: <span class="hljs-number">8px</span>;
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$spc_more_button_dark</span>;
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">22px</span>;
+	    <span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">0deg</span>);
+	    <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.2s</span>;
 		}
 	}
 }
@@ -266,7 +309,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">403 Bytes</span>
+                    <span class="Meta-value">1.2 KB</span>
                 </li>
             </ul>
         </div>
@@ -749,7 +792,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
