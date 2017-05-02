@@ -165,10 +165,12 @@
     <span class="hljs-comment">&lt;!-- Display on toggle --&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icons-wrapper"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>SAY HELLO!<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>CUSTOM TEXT<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">"/icons/icons.svg#spc_testfile_twitter"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">"/icons/icons.svg#spc_testfile_instagram"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">"/icons/icons.svg#spc_testfile_facebook"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>example@placeholdermail.com<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>+XX XX XXX XX XX<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
@@ -191,7 +193,7 @@
 			</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">for</span></span> icon in spc_social_widget.menu.icons %}</span><span class="xml">
 				<span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ icon.target }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">"/icons/icons.svg#</span></span></span><span class="hljs-template-variable">{{ icon.name }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>	
 			</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endfor</span></span> %}</span><span class="xml">
-			</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">for</span></span> item in menu.contact %}</span><span class="xml">
+			</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">for</span></span> item in spc_social_widget.menu.contact %}</span><span class="xml">
 				<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span></span><span class="hljs-template-variable">{{ item }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 			</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endfor</span></span> %}</span><span class="xml">
 		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -211,7 +213,7 @@
       <span class="hljs-attr">"text"</span>: <span class="hljs-string">"us"</span>
     },
     <span class="hljs-attr">"menu"</span>: {
-      <span class="hljs-attr">"heading"</span>: <span class="hljs-string">"&lt;b&gt;SAY HELLO!&lt;/b&gt;"</span>,
+      <span class="hljs-attr">"heading"</span>: <span class="hljs-string">"&lt;b&gt;CUSTOM TEXT&lt;/b&gt;"</span>,
       <span class="hljs-attr">"icons"</span>: {
         <span class="hljs-attr">"twitter"</span>: {
           <span class="hljs-attr">"name"</span>: <span class="hljs-string">"spc_testfile_twitter"</span>,
@@ -227,8 +229,8 @@
         }
       },
       <span class="hljs-attr">"contact"</span>: {
-        <span class="hljs-attr">"mail"</span>: <span class="hljs-string">"example@placeholder.tst"</span>,
-        <span class="hljs-attr">"phone"</span>: <span class="hljs-string">"+46 70 XXX XX XX"</span>
+        <span class="hljs-attr">"mail"</span>: <span class="hljs-string">"example@placeholdermail.com"</span>,
+        <span class="hljs-attr">"phone"</span>: <span class="hljs-string">"+XX XX XXX XX XX"</span>
       }
     }
   }
@@ -263,17 +265,19 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre>
+                                <pre><span class="hljs-variable">$spc_social_widget-dark</span>: <span class="hljs-number">#000</span>;
+<span class="hljs-variable">$spc_social_widget-bright</span>: <span class="hljs-number">#fff</span>;
+
 <span class="hljs-selector-class">.spc_social_widget</span> {
 
 	<span class="hljs-selector-class">.social-button</span> {
 		<span class="hljs-attribute">position</span>: fixed;
     <span class="hljs-attribute">top</span>: -<span class="hljs-number">50px</span>;
     <span class="hljs-attribute">right</span>: -<span class="hljs-number">50px</span>;
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fff</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$spc_social_widget-bright</span>;
     <span class="hljs-attribute">height</span>: <span class="hljs-number">80px</span>;
     <span class="hljs-attribute">width</span>: <span class="hljs-number">120px</span>;
-    <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#000</span>;
+    <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$spc_social_widget-dark</span>;
     <span class="hljs-attribute">z-index</span>: <span class="hljs-number">999</span>;
     -ms-<span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">45deg</span>);
     <span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">45deg</span>);
@@ -284,7 +288,7 @@
 	    <span class="hljs-attribute">top</span>: <span class="hljs-number">80%</span>;
 	    <span class="hljs-attribute">left</span>: <span class="hljs-number">62%</span>;
 	    <span class="hljs-attribute">text-transform</span>: uppercase;
-	    <span class="hljs-attribute">color</span>: <span class="hljs-number">#000</span>;
+	    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$spc_social_widget-dark</span>;
 	    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;
 	    <span class="hljs-attribute">text-align</span>: center;
 	    <span class="hljs-attribute">font-weight</span>: bold;
@@ -294,10 +298,10 @@
 		}
 
 		&amp;:hover {
-			<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#000</span>;
+			<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$spc_social_widget-dark</span>;
 		
 			<span class="hljs-selector-tag">p</span> {
-				<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$spc_social_widget-bright</span>;
 			}
 		}
 	}
@@ -313,9 +317,9 @@
 		<span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
 		<span class="hljs-attribute">right</span>: -<span class="hljs-number">100vw</span>;
 		<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
-		<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#000</span>;
+		<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$spc_social_widget-dark</span>;
 		<span class="hljs-attribute">z-index</span>: <span class="hljs-number">998</span>;
-		<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.5s</span>;
+		<span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span>;
 
 		<span class="hljs-selector-tag">div</span> {
 			<span class="hljs-attribute">position</span>: absolute;
@@ -325,9 +329,9 @@
 
 			<span class="hljs-selector-tag">p</span> {
 				<span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
-				<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$spc_social_widget-bright</span>;
 				<span class="hljs-attribute">text-align</span>: center;
-		    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto <span class="hljs-number">20px</span>;
+		    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto <span class="hljs-number">5px</span>;
 		    <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
 			}
 
@@ -335,7 +339,7 @@
 				<span class="hljs-attribute">display</span>: block;
 				<span class="hljs-attribute">width</span>: <span class="hljs-number">28px</span>;
 		    <span class="hljs-attribute">height</span>: <span class="hljs-number">28px</span>;
-		    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto <span class="hljs-number">20px</span>;
+		    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto <span class="hljs-number">5px</span>;
 		    <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
 			}
 		}
@@ -370,7 +374,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.4 KB</span>
+                    <span class="Meta-value">1.6 KB</span>
                 </li>
             </ul>
         </div>
@@ -468,6 +472,16 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/spc_article.html" data-pjax>
+                <span>Spc Article</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../../docs/spc_article_excerpts.html" data-pjax>
                 <span>Spc Article Excerpts</span>
                 
@@ -535,16 +549,6 @@
         </li>
         
     
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../docs/spc_testfile.html" data-pjax>
-                <span>Spc Testfile</span>
-                
-            </a>
-        </li>
-        
-    
 
     </ul>
 </div>
@@ -564,43 +568,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="example.html" data-pjax>
-                <span>Example</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-icon">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Icon</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
-            
-            
-            
-            
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="icon--default.html" data-pjax>
-                <span>Default</span>
+            <a class="Tree-entityLink" href="blogpage.html" data-pjax>
+                <span>Blogpage</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -623,8 +592,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="icon--checkmark.html" data-pjax>
-                <span>Checkmark</span>
+            <a class="Tree-entityLink" href="spc_article.html" data-pjax>
+                <span>Spc Article</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -632,84 +601,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="icon--info.html" data-pjax>
-                <span>Info</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="icon--warning.html" data-pjax>
-                <span>Warning</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-
-            </ul>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="icons.html" data-pjax>
-                <span>Icons</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
 
 
 </div>
@@ -829,7 +721,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -878,30 +770,6 @@
 
 
 <span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="spc_testfile.html" data-pjax>
-                <span>Spc Testfile</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
 
 
 </div>

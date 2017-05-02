@@ -10,7 +10,7 @@
 			{% for icon in spc_social_widget.menu.icons %}
 				<svg><a href="{{ icon.target }}"><use xlink:href="/icons/icons.svg#{{ icon.name }}"></use></a></svg>	
 			{% endfor %}
-			{% for item in menu.contact %}
+			{% for item in spc_social_widget.menu.contact %}
 				<p>{{ item }}</p>
 			{% endfor %}
 		</div>

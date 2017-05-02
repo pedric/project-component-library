@@ -6,11 +6,11 @@
 		<ul class="toggleMenu">
 			{% for item in spc_inline_menu.items %}
 				<li class="menuItem">
-					<span>#</span><a href="{{ item.target }}">{{ item.text }}</a>
+					<a href="{{ item.target }}"><span>#</span>{{ item.text }}</a>
 					{% if item.items %}
 					<ul>
 						{% for submenuitem in item.items %}
-						<li><span>#</span><a href="#">{{ submenuitem }}</a></li>
+						<li><a href="#"><span>#</span>{{ submenuitem }}</a></li>
 						{% endfor %}
 					</ul>
 					{% endif %}

@@ -6,7 +6,7 @@
 				"text": "us"
 			},
 			"menu": {
-				"heading": "<b>SAY HELLO!</b>",
+				"heading": "<b>CUSTOM TEXT</b>",
 				"icons": {
 					"twitter": {
 						"name": "spc_testfile_twitter",
@@ -22,8 +22,8 @@
 					}
 				},
 				"contact": {
-					"mail": "example@placeholder.tst",
-					"phone": "+46 70 XXX XX XX"
+					"mail": "example@placeholdermail.com",
+					"phone": "+XX XX XXX XX XX"
 				}
 			}
 		}

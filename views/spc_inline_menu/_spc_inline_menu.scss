@@ -1,3 +1,6 @@
+$spc_inline_menu-dark: #000;
+$spc_inline_menu-bright: #fff;
+
 /* Clearfix */
 .spc_inline_menu::after,
 .spc_inline_menu nav::after {
@@ -34,7 +37,7 @@
 				margin: 5px;
 				font-size: 22px;
 				text-decoration: none;
-				color: #000;
+				color: $spc_inline_menu-dark;
 				font-weight: bold;
 				padding: 10px;
 				z-index: 999;
@@ -52,31 +55,32 @@
 				}
 
 				&:hover ul li {
-					height: 55px;
-				}
-
-				span {
-					position: absolute;
-					font-size: 22px;
-					color: #fff;
-					top: 50%;
-					left: 6%;
-					transform: translateY(-50%);
+					height: 43px;
 				}
 
 				a {
+					position: relative;
 					display: block;
 					font-size: 22px;
 					text-decoration: none;
 					font-weight: bold;
-					padding: 15px 0;
+					padding: 10px 0;
 					margin: 0 2px;
-					background-color: #fff;
-					color: #000;
+					background-color: $spc_inline_menu-bright;
+					color: $spc_inline_menu-dark;
 					transition: all 0.2s;
 					border-radius: 30px;
 
-					&:hover { background-color: #000; color: #fff; }
+					&:hover { background-color: $spc_inline_menu-dark; color: $spc_inline_menu-bright; }
+
+					span {
+						position: absolute;
+						font-size: inherit;
+						color: $spc_inline_menu-bright;
+						top: 50%;
+						left: 6%;
+						transform: translateY(-50%);
+					}
 				}
 
 				ul {
@@ -86,7 +90,8 @@
 					padding: 0;
 					z-index: 999;
 					opacity: 0;
-					transition: all 0.4s;
+					margin-top: 3px;
+					transition: all 0.2s;
 
 					li {
 						height: 0px;
@@ -97,17 +102,17 @@
 						margin: 3px auto;
 						transition: all 0.4s;
 
-						&:hover a { background-color: #000; color: #fff; }
+						&:hover a { background-color: $spc_inline_menu-dark; color: $spc_inline_menu-bright; }
 
 						a {
 							display: block;
 							font-size: 22px;
 							text-decoration: none;
 							font-weight: bold;
-							padding: 15px 0;
+							padding: 10px 0;
 							margin: 0 2px;
-							background-color: #fff;
-							color: #000;
+							background-color: $spc_inline_menu-bright;
+							color: $spc_inline_menu-dark;
 							transition: all 0.2s;
 							border-radius: 30px;
 						}
@@ -124,33 +129,35 @@
 
 		position: fixed;
 		top: 0;
-		background-color: #fff;
+		background-color: $spc_inline_menu-bright;
 		z-index: 900;
 
 		ul:first-child { display: block; }
 
 		.fade-in-out {
+			opacity: 1 !important;
 			left: 0 !important;
 		}
 
 		ul:nth-child(2) {
+			opacity: 0;
+			overflow: scroll;
+			float: left;
 			box-sizing: border-box;
-			position: fixed;
-			width: 100vw;
-			height: 100vh;	
+			position: fixed;	
 			top: 55px;
 			left: -100vw;
 			bottom: 0;
 			float: none;
 			padding-left: 10px;
-			background-color: #fff;
-			transition: all 0.5s;
+			background-color: $spc_inline_menu-bright;
+			transition: all 0.3s;
 
 			li.menuItem {
 				width: 100%;
 				text-align: left;
 
-				&:hover > span { color: #000; }
+				&:hover > span { color: $spc_inline_menu-dark; }
 
 				&:hover ul li {
 					height: initial;
@@ -159,17 +166,17 @@
 				span {
 					position: absolute;
 					font-size: 22px;
-					color: #000;
-					top: 14px;
-					left: 15px;
-					transform: translateY(0%);
+					color: $spc_inline_menu-dark;
+					top: 50%;
+					left: 10px;
+					transform: translateY(-50%);
 				}
 
 				> a {
 					margin: 5px;
 					padding: 10px 10px 10px 26px;
 
-					&:hover { background-color: transparent; color: red; }
+					&:hover { background-color: transparent; }
 				}
 
 				ul {
@@ -189,20 +196,21 @@
 						margin: 3px auto;
 						transition: all 0.4s;
 
-						span {
-							position: absolute;
-							font-size: 22px;
-							color: #000;
-							left: 15px;
-							transform: translateY(0%);
-						}
-
 						a {
 							font-style: italic;
 							font-size: 18px;
 							background-color: transparent;
 							margin: 5px;
 							padding: 10px 10px 10px 26px;
+
+							span {
+								position: absolute;
+								font-size: inherit;
+								color: $spc_inline_menu-dark;
+								top: 50%;
+								left: 10px;
+								transform: translateY(-50%);
+							}
 						}
 					}
 				}

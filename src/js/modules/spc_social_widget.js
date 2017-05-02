@@ -1,7 +1,7 @@
 export default class Spc_social_widget {
     constructor(element) {
 
-    	var self = this
+    	let self = this
     	this.element = element
     	let btn = element.firstElementChild
     	this.menu = element.lastElementChild
@@ -9,6 +9,10 @@ export default class Spc_social_widget {
     	btn.addEventListener('click', function() {
     		self.toggleMenu()
     	})
+
+        this.menu.addEventListener('click', function() {
+            self.toggleMenu()
+        })
     }
 
     toggleMenu() {

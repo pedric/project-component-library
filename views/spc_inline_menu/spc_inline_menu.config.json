@@ -8,28 +8,67 @@
 			},
 			"items": {
 				"item1": {
-					"text": "blog",
-					"target": "www.example.se"
+					"text": "menu item",
+					"target": "#",
+					"items": {
+						"item1": "sub menu item",
+						"item2": "sub menu item",
+						"item3": "sub menu item"
+					}
 				},
 				"item2": {
-					"text": "reviews",
-					"target": "www.example.se"
+					"text": "menu item",
+					"target": "#",
+					"items": {
+						"item1": "sub menu item",
+						"item2": "sub menu item",
+						"item3": "sub menu item"
+					}
 				},
 				"item3": {
-					"text": "article",
-					"target": "www.example.se"
+					"text": "menu item",
+					"target": "#",
+					"items": {
+						"item1": "sub menu item",
+						"item2": "sub menu item",
+						"item3": "sub menu item"
+					}
 				},
 				"item4": {
-					"text": "contact",
-					"target": "www.example.se"
+					"text": "menu item",
+					"target": "#",
+					"items": {
+						"item1": "sub menu item",
+						"item2": "sub menu item",
+						"item3": "sub menu item"
+					}
 				},
 				"item5": {
-					"text": "about",
-					"target": "www.example.se"
+					"text": "menu item",
+					"target": "#",
+					"items": {
+						"item1": "sub menu item",
+						"item2": "sub menu item",
+						"item3": "sub menu item"
+					}
 				},
 				"item6": {
-					"text": "social",
-					"target": "www.example.se"
+					"text": "menu item",
+					"target": "#",
+					"items": {
+						"item1": "sub menu item",
+						"item2": "sub menu item",
+						"item3": "sub menu item"
+					}
+				},
+				"item7": {
+					"text": "menu item",
+					"target": "#",
+					"items": {
+						"item1": "sub menu item",
+						"item2": "sub menu item",
+						"item3": "sub menu item"
+					}
 				}
 			}
 		}

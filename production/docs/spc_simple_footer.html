@@ -69,11 +69,25 @@
 
     
     
-    <p><em>- A supersimple footer designed as a component for Spacecraft Starterkit</em></p>
+    <p><em>- A supersimple footer</em></p>
+<p><em>- Designed as a Spacecraft Starterkit compatible component</em></p>
 <h2 id="quick-start">Quick start</h2>
 <p>No config.json needed, set your name in the <code>data-spc_simple_footer</code> attribute like this: <code>data-spc_simple_footer=&quot;company name&quot;</code> in spc_simple_footer.twig.</p>
 <p>Change the color variable or it’s value in scss-file to customise. By default it´s the same style for p-, span- and a elements.</p>
 <p>The span element will contain <code>@YEAR</code> + <code>name</code> set as described above.</p>
+<h2 id="install">Install</h2>
+<p>Clone/download <a href="https://github.com/pedric/spacecraft-starterkit">Spacecraft Starterkit</a> and run:</p>
+<p><code>npm install</code></p>
+<p><code>npm install --save &lt;component-name&gt;</code>
+// To get this actual component downloaded.</p>
+<p><code>gulp import --component &lt;component-name&gt;</code>
+// To get the files into your project.</p>
+<p><code>gulp</code>
+// To start up Spacecraft.</p>
+<p>The last step is to import the css, in..</p>
+<p><code>./src/scss/components/_components.main.scss</code></p>
+<p>..add..</p>
+<p><code>@import &quot;views/&lt;component-name&gt;/&lt;component-name&gt;&quot;;</code></p>
 
     
 
@@ -108,6 +122,16 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="introduction.html" data-pjax>
                 <span>Introduction</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="spc_article.html" data-pjax>
+                <span>Spc Article</span>
                 
             </a>
         </li>
@@ -183,16 +207,6 @@
         </li>
         
     
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="spc_testfile.html" data-pjax>
-                <span>Spc Testfile</span>
-                
-            </a>
-        </li>
-        
-    
 
     </ul>
 </div>
@@ -212,43 +226,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/example.html" data-pjax>
-                <span>Example</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-icon">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Icon</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
-            
-            
-            
-            
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/icon--default.html" data-pjax>
-                <span>Default</span>
+            <a class="Tree-entityLink" href="../components/detail/blogpage.html" data-pjax>
+                <span>Blogpage</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -271,8 +250,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/icon--checkmark.html" data-pjax>
-                <span>Checkmark</span>
+            <a class="Tree-entityLink" href="../components/detail/spc_article.html" data-pjax>
+                <span>Spc Article</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -280,84 +259,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/icon--info.html" data-pjax>
-                <span>Info</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/icon--warning.html" data-pjax>
-                <span>Warning</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-
-            </ul>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/icons.html" data-pjax>
-                <span>Icons</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
 
 
 </div>
@@ -477,7 +379,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -526,30 +428,6 @@
 
 
 <span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/spc_testfile.html" data-pjax>
-                <span>Spc Testfile</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
 
 
 </div>

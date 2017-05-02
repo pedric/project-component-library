@@ -16,7 +16,8 @@ $bg-hover: rgba(0,0,0,0.7);
 		float: left;
 		width: 98%;
 		margin: 1%;
-		min-height: 60vh;
+		height: 60vh;
+		min-height: 450px;
 
 		background-position: center;
 		background-size: cover;
@@ -143,9 +144,25 @@ $bg-hover: rgba(0,0,0,0.7);
 
 	@media screen and (max-width: 500px) {
 
-		article > div > div:first-child {
-			width: 90%;
-			top: initial;
+		article {
+
+			width: 96%;
+			margin: 0 0 2% 2%;
+
+			> div > div:first-child {
+				width: 90%;
+				top: initial;
+
+				h2 {
+					font-size: 32px;
+				}
+
+				p {
+			    font-size: 14px;
+			    font-weight: lighter;
+			    line-height: 18px;
+				}
+			}
 		}
 	}
 }

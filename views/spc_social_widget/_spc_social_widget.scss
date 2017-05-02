@@ -1,3 +1,5 @@
+$spc_social_widget-dark: #000;
+$spc_social_widget-bright: #fff;
 
 .spc_social_widget {
 
@@ -5,10 +7,10 @@
 		position: fixed;
     top: -50px;
     right: -50px;
-    background-color: #fff;
+    background-color: $spc_social_widget-bright;
     height: 80px;
     width: 120px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid $spc_social_widget-dark;
     z-index: 999;
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -19,7 +21,7 @@
 	    top: 80%;
 	    left: 62%;
 	    text-transform: uppercase;
-	    color: #000;
+	    color: $spc_social_widget-dark;
 	    font-size: 12px;
 	    text-align: center;
 	    font-weight: bold;
@@ -29,10 +31,10 @@
 		}
 
 		&:hover {
-			background-color: #000;
+			background-color: $spc_social_widget-dark;
 		
 			p {
-				color: #fff;
+				color: $spc_social_widget-bright;
 			}
 		}
 	}
@@ -48,9 +50,9 @@
 		top: 0;
 		right: -100vw;
 		bottom: 0;
-		background-color: #000;
+		background-color: $spc_social_widget-dark;
 		z-index: 998;
-		transition: all 0.5s;
+		transition: all 0.3s;
 
 		div {
 			position: absolute;
@@ -60,9 +62,9 @@
 
 			p {
 				font-size: 14px;
-				color: #fff;
+				color: $spc_social_widget-bright;
 				text-align: center;
-		    margin: 0 auto 20px;
+		    margin: 0 auto 5px;
 		    padding: 10px;
 			}
 
@@ -70,7 +72,7 @@
 				display: block;
 				width: 28px;
 		    height: 28px;
-		    margin: 0 auto 20px;
+		    margin: 0 auto 5px;
 		    padding: 10px;
 			}
 		}

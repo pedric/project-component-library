@@ -2,11 +2,13 @@
 	"status": "wip",
 	"context": {
 		"spc_hero_article": {
-			"heading": "Testing heading",
-			"ingress": "The ingress of article shows here. The ingress of article shows here. The ingress of article shows here. The ingress of article shows here.",
-			"author": "Fredrik Larsson",
-			"date": "2017-04-06",
-			"image": "https://images.genius.com/3c48a24a8c05ee4b6b07a2eada68a3d0.640x640x1.jpg"
+			"heading": "article headline",
+			"ingress": "The ingress of article shows here. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+			"author": "Author Name",
+			"date": "2017-01-01",
+			"image": "https://larsson-postcardapp.herokuapp.com/img/slides/1.jpg",
+			"category": "none",
+			"tags": ["tags", "tags", "tags"]
 		}
 	}
 }

@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../themes/mandelbrot/favicon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=1.1.0" type="text/css">
+
+
+<title>Blogpage | Spacecraft Component Library</title>
+
+</head>
+<body>
+
+
+
+<div class="Frame" id="frame">
+
+    <div class="Frame-header">
+        <div class="Header">
+    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+        <svg class="Header-navToggleIcon Header-navToggleIcon--open" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
+</svg>
+
+        <svg class="Header-navToggleIcon Header-navToggleIcon--closed" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+</svg>
+
+    </button>
+    <a href="../../index.html" class="Header-title" data-pjax>Spacecraft Component Library</a>
+</div>
+
+    </div>
+
+    <div class="Frame-body" data-role="body">
+
+        <div class="Frame-panel Frame-panel--main" data-role="main">
+            <div class="Frame-inner" id="pjax-container">
+            
+
+
+    
+    
+
+<div class="Pen" data-behaviour="pen" id="pen-bf3cbca0b744dd61ed84b06aea466c6d">
+
+    
+
+    <div class="Pen-panel Pen-header">
+    <h1 class="Pen-title">
+        <a class="Pen-previewLink" href="../preview/blogpage.html" title="Component preview">
+            Blogpage
+            <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+
+        </a>
+    </h1>
+    
+
+<div class="Status Status--tag">
+
+<label class="Status-label" style="background-color: #FF9233; border-color: #FF9233;">WIP</label>
+
+</div>
+
+
+</div>
+
+
+    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-bf3cbca0b744dd61ed84b06aea466c6d">
+    <div class="Preview-wrapper" data-role="resizer">
+        <div class="Preview-resizer">
+            
+             <iframe
+                class="Preview-iframe"
+                data-role="window"
+                src="../preview/blogpage.html"
+                sandbox="allow-same-origin allow-scripts allow-forms"
+                 style=""
+                marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
+            </iframe>
+        </div>
+        <div class="Preview-handle" data-role="resize-handle"></div>
+        <div class="Preview-overlay"></div>
+    </div>
+</div>
+
+
+    <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
+
+    <div class="Pen-panel Pen-info" data-role="info">
+    <div class="Browser" data-behaviour="browser" id="browser-bf3cbca0b744dd61ed84b06aea466c6d">
+
+    
+
+<div class="Browser-controls">
+    <ul class="Browser-tabs">
+        
+        
+        <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
+            <a href="#browser-bf3cbca0b744dd61ed84b06aea466c6d-panel-html">HTML</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--view" data-role="tab">
+            <a href="#browser-bf3cbca0b744dd61ed84b06aea466c6d-panel-view">View</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--context" data-role="tab">
+            <a href="#browser-bf3cbca0b744dd61ed84b06aea466c6d-panel-context">Context</a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--info" data-role="tab">
+            <a href="#browser-bf3cbca0b744dd61ed84b06aea466c6d-panel-info">Info</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--notes" data-role="tab">
+            <a href="#browser-bf3cbca0b744dd61ed84b06aea466c6d-panel-notes">Notes</a>
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+    
+    
+<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-bf3cbca0b744dd61ed84b06aea466c6d-panel-html">
+    <code class="Code Code--lang-html">
+        
+        <pre><span class="hljs-comment">&lt;!-- Limit width --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"spc_article"</span> <span class="hljs-attr">data-module</span>=<span class="hljs-string">"spc_article"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://larsson-postcardapp.herokuapp.com/img/slides/1.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"https://larsson-postcardapp.herokuapp.com/img/slides/1.jpg"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>©Copyrightholder<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">article</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url(https://larsson-postcardapp.herokuapp.com/img/slides/1.jpg);"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>spacecraft<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Author Name 2017-01-01<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Instead of just "lorem ipsum"-ize this I put a little introduction to the project where this was created. This work concerns Spacecraft and the distribution of components.<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"main-content"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Spacecraft is a tool for building websites in which you are in control- of and can work based on components. When working with this method it would be quite handy to be able to develop and reuse these components between projects. This
+                    styleguide is part of a project with the aim to find- and implement a way to distribute- and have versioncontrolled components.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>To use Spacecraft together with the ready-to-use components, start with cloning this repo: <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://github.com/pedric/spacecraft-starterkit"</span>&gt;</span>https://github.com/pedric/spacecraft-starterkit<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>, which is a version of Spacecraft-Starter
+                    in where another customised version of Spacecraft lives. This kit are expanded with the tasks for importing components direct to your project with a few commands presented below in the installation guide.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>There is no limitation to what a component is, this styleguide for example, could be fewer components or even one big “page” component or the other way torn down to more even smaller components. But in first hand this is built to test
+                    and develop the structure, conventions, distribution etc for components.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Installation guide<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Clone/download <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://github.com/pedric/spacecraft-starterkit"</span>&gt;</span>https://github.com/pedric/spacecraft-starterkit<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> and run:
+                    <span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span>npm install<span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span>npm install --save spc_testfile<span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span>gulp import --component spc_testfile<span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span>gulp<span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>The last step is to import the scss, in..
+                    <span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span>./src/scss/components/_components.main.scss<span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span> ..add..
+                    <span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span>@import "views/spc_testfile/spc_testfile";<span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Example image<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://larsson-postcardapp.herokuapp.com/img/slides/1.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"#"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>The copy/paste<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Somewhere you will do the “copy/paste”, sure you can be developing your component directly and push it to NPM/GIT, but probably you will enhance components while working on them in different projects. In the structure as it is built now
+                    you will have to do this “copy/paste” since the import process is copying components into a project and from there one are not working with the original version.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Sources<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://github.com/pedric/spacecraft-starterkit"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Spacecraft Starterkit<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://github.com/pedric/spacecraft-projectversion"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Spacecraft Module (customised project version)<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://spc-component-library.herokuapp.com/index.html"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Browse components<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://github.com/pedric/spc_component_library"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>These components at github<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"max-width:1024px;margin:0 auto;overflow: auto;"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"spc_social_widget"</span> <span class="hljs-attr">data-module</span>=<span class="hljs-string">"spc_social_widget"</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Button --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"social-button"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>us<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Display on toggle --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icons-wrapper"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>CUSTOM TEXT<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">"/icons/icons.svg#spc_testfile_twitter"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">"/icons/icons.svg#spc_testfile_instagram"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">"/icons/icons.svg#spc_testfile_facebook"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>example@placeholdermail.com<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>+XX XX XXX XX XX<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"blogpage"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"spc_hero_article"</span> <span class="hljs-attr">data-module</span>=<span class="hljs-string">"spc_hero_article"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://larsson-postcardapp.herokuapp.com/img/slides/1.jpg);"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>article headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>The ingress of article shows here. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                            distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Author Name 2017-01-01<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"spc_fullwidth_heading"</span> <span class="hljs-attr">data-module</span>=<span class="hljs-string">"spc_fullwidth_heading"</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
+				placeholder
+			<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"spc_inline_menu"</span> <span class="hljs-attr">data-module</span>=<span class="hljs-string">"spc_inline_menu"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menuButton"</span>&gt;</span>menu<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"toggleMenu"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menuItem"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>sub menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>sub menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>sub menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menuItem"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>sub menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>sub menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>sub menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menuItem"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>sub menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>sub menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>sub menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menuItem"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>sub menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>sub menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>sub menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menuItem"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>sub menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>sub menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>sub menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menuItem"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>sub menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>sub menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>sub menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menuItem"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>sub menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>sub menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>sub menu item<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"spc_article_excerpts"</span> <span class="hljs-attr">data-module</span>=<span class="hljs-string">"spc_article_excerpts"</span> <span class="hljs-attr">data-spc_article_excerpts</span>=<span class="hljs-string">"spc_article_excerpts JS-module loaded!"</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://larsson-postcardapp.herokuapp.com/img/slides/1.jpg);"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">"/icons/icons.svg#spc_article_excerpts"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>article headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                        <span class="hljs-comment">&lt;!--&lt;p&gt;The first XX charachters of article...&lt;/p&gt;--&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Author Name 2017-01-01<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://larsson-postcardapp.herokuapp.com/img/slides/4.jpg);"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">"/icons/icons.svg#spc_article_excerpts"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>article headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                        <span class="hljs-comment">&lt;!--&lt;p&gt;The first XX charachters of article...&lt;/p&gt;--&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Author Name 2017-01-01<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://larsson-postcardapp.herokuapp.com/img/slides/5.jpg);"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">"/icons/icons.svg#spc_article_excerpts"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>article headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                        <span class="hljs-comment">&lt;!--&lt;p&gt;The first XX charachters of article...&lt;/p&gt;--&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Author Name 2017-01-01<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://larsson-postcardapp.herokuapp.com/img/slides/1.jpg);"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">"/icons/icons.svg#spc_article_excerpts"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>article headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                        <span class="hljs-comment">&lt;!--&lt;p&gt;The first XX charachters of article...&lt;/p&gt;--&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Author Name 2017-01-01<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://larsson-postcardapp.herokuapp.com/img/slides/4.jpg);"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">"/icons/icons.svg#spc_article_excerpts"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>article headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                        <span class="hljs-comment">&lt;!--&lt;p&gt;The first XX charachters of article...&lt;/p&gt;--&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Author Name 2017-01-01<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://larsson-postcardapp.herokuapp.com/img/slides/5.jpg);"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">"/icons/icons.svg#spc_article_excerpts"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>article headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                        <span class="hljs-comment">&lt;!--&lt;p&gt;The first XX charachters of article...&lt;/p&gt;--&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Author Name 2017-01-01<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://larsson-postcardapp.herokuapp.com/img/slides/1.jpg);"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">"/icons/icons.svg#spc_article_excerpts"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>article headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                        <span class="hljs-comment">&lt;!--&lt;p&gt;The first XX charachters of article...&lt;/p&gt;--&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Author Name 2017-01-01<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://larsson-postcardapp.herokuapp.com/img/slides/4.jpg);"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">"/icons/icons.svg#spc_article_excerpts"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>article headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                        <span class="hljs-comment">&lt;!--&lt;p&gt;The first XX charachters of article...&lt;/p&gt;--&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Author Name 2017-01-01<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://larsson-postcardapp.herokuapp.com/img/slides/5.jpg);"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">"/icons/icons.svg#spc_article_excerpts"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>article headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                        <span class="hljs-comment">&lt;!--&lt;p&gt;The first XX charachters of article...&lt;/p&gt;--&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Author Name 2017-01-01<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>tags<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"spc_more_button"</span> <span class="hljs-attr">data-module</span>=<span class="hljs-string">"spc_more_button"</span> <span class="hljs-attr">data-spc_more_button</span>=<span class="hljs-string">"view more"</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>+<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"spc_simple_footer"</span> <span class="hljs-attr">data-module</span>=<span class="hljs-string">"spc_simple_footer"</span> <span class="hljs-attr">data-spc_simple_footer</span>=<span class="hljs-string">"company name"</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>, click this <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>examplelink<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
+        
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-bf3cbca0b744dd61ed84b06aea466c6d-panel-view">
+    <code class="Code Code--lang-twig">
+        <pre><span class="xml"><span class="hljs-comment">&lt;!-- Limit width --&gt;</span>
+</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">include</span></span> "spc_article/spc_article.twig" %}</span><span class="xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"max-width:1024px;margin:0 auto;overflow: auto;"</span>&gt;</span>
+	</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">include</span></span> "spc_social_widget/spc_social_widget.twig" %}</span><span class="xml">
+	</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">include</span></span> "spc_hero_article/spc_hero_article.twig" %}</span><span class="xml">
+	</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">include</span></span> "spc_fullwidth_heading/spc_fullwidth_heading.twig" %}</span><span class="xml">
+	</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">include</span></span> "spc_inline_menu/spc_inline_menu.twig" %}</span><span class="xml">
+	</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">include</span></span> "spc_article_excerpts/spc_article_excerpts.twig" %}</span><span class="xml">
+	</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">include</span></span> "spc_more_button/spc_more_button.twig" %}</span><span class="xml">
+	</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">include</span></span> "spc_simple_footer/spc_simple_footer.twig" %}</span><span class="xml">
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-bf3cbca0b744dd61ed84b06aea466c6d-panel-context">
+    <code class="Code Code--lang-json">
+        
+            
+            <pre>{
+  <span class="hljs-attr">"spc_article"</span>: {
+    <span class="hljs-attr">"date"</span>: <span class="hljs-string">"2017-01-01"</span>,
+    <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Author Name"</span>,
+    <span class="hljs-attr">"heading"</span>: <span class="hljs-string">"spacecraft"</span>,
+    <span class="hljs-attr">"ingress"</span>: <span class="hljs-string">"Instead of just \"lorem ipsum\"-ize this I put a little introduction to the project where this was created. This work concerns Spacecraft and the distribution of components."</span>,
+    <span class="hljs-attr">"content"</span>: <span class="hljs-string">"&lt;p&gt;Spacecraft is a tool for building websites in which you are in control- of and can work based on components. When working with this method it would be quite handy to be able to develop and reuse these components between projects. This styleguide is part of a project with the aim to find- and implement a way to distribute- and have versioncontrolled components.&lt;/p&gt;&lt;p&gt;To use Spacecraft together with the ready-to-use components, start with cloning this repo: &lt;a href=\"https://github.com/pedric/spacecraft-starterkit\"&gt;https://github.com/pedric/spacecraft-starterkit&lt;/a&gt;, which is a version of Spacecraft-Starter in where another customised version of Spacecraft lives. This kit are expanded with the tasks for importing components direct to your project with a few commands presented below in the installation guide.&lt;/p&gt;&lt;p&gt;There is no limitation to what a component is, this styleguide for example, could be fewer components or even one big “page” component or the other way torn down to more even smaller components. But in first hand this is built to test and develop the structure, conventions, distribution etc for components.&lt;/p&gt;&lt;h3&gt;Installation guide&lt;/h3&gt;&lt;p&gt;Clone/download &lt;a href=\"https://github.com/pedric/spacecraft-starterkit\"&gt;https://github.com/pedric/spacecraft-starterkit&lt;/a&gt; and run:&lt;pre&gt;npm install&lt;/pre&gt;&lt;pre&gt;npm install --save spc_testfile&lt;/pre&gt;&lt;pre&gt;gulp import --component spc_testfile&lt;/pre&gt;&lt;pre&gt;gulp&lt;/pre&gt;The last step is to import the scss, in.. &lt;pre&gt;./src/scss/components/_components.main.scss&lt;/pre&gt; ..add.. &lt;pre&gt;@import \"views/spc_testfile/spc_testfile\";&lt;/pre&gt;&lt;/p&gt;&lt;h3&gt;Example image&lt;/h3&gt;&lt;img src=\"https://larsson-postcardapp.herokuapp.com/img/slides/1.jpg\" alt=\"#\"&gt;&lt;h3&gt;The copy/paste&lt;/h3&gt;&lt;p&gt;Somewhere you will do the “copy/paste”, sure you can be developing your component directly and push it to NPM/GIT, but probably you will enhance components while working on them in different projects. In the structure as it is built now you will have to do this “copy/paste” since the import process is copying components into a project and from there one are not working with the original version.&lt;/p&gt;&lt;h3&gt;Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\"https://github.com/pedric/spacecraft-starterkit\"&gt;&lt;strong&gt;Spacecraft Starterkit&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"https://github.com/pedric/spacecraft-projectversion\"&gt;&lt;strong&gt;Spacecraft Module (customised project version)&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"https://spc-component-library.herokuapp.com/index.html\"&gt;&lt;strong&gt;Browse components&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"https://github.com/pedric/spc_component_library\"&gt;&lt;strong&gt;These components at github&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;"</span>,
+    <span class="hljs-attr">"image"</span>: {
+      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://larsson-postcardapp.herokuapp.com/img/slides/1.jpg"</span>,
+      <span class="hljs-attr">"alt"</span>: <span class="hljs-string">"Placeholder image"</span>,
+      <span class="hljs-attr">"copyright"</span>: <span class="hljs-string">"Copyrightholder"</span>,
+      <span class="hljs-attr">"description"</span>: <span class="hljs-string">"#"</span>
+    }
+  },
+  <span class="hljs-attr">"spc_hero_article"</span>: {
+    <span class="hljs-attr">"heading"</span>: <span class="hljs-string">"article headline"</span>,
+    <span class="hljs-attr">"ingress"</span>: <span class="hljs-string">"The ingress of article shows here. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."</span>,
+    <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Author Name"</span>,
+    <span class="hljs-attr">"date"</span>: <span class="hljs-string">"2017-01-01"</span>,
+    <span class="hljs-attr">"image"</span>: <span class="hljs-string">"https://larsson-postcardapp.herokuapp.com/img/slides/1.jpg"</span>,
+    <span class="hljs-attr">"category"</span>: <span class="hljs-string">"none"</span>,
+    <span class="hljs-attr">"tags"</span>: [
+      <span class="hljs-string">"tags"</span>,
+      <span class="hljs-string">"tags"</span>,
+      <span class="hljs-string">"tags"</span>
+    ]
+  },
+  <span class="hljs-attr">"spc_social_widget"</span>: {
+    <span class="hljs-attr">"button"</span>: {
+      <span class="hljs-attr">"text"</span>: <span class="hljs-string">"us"</span>
+    },
+    <span class="hljs-attr">"menu"</span>: {
+      <span class="hljs-attr">"heading"</span>: <span class="hljs-string">"&lt;b&gt;CUSTOM TEXT&lt;/b&gt;"</span>,
+      <span class="hljs-attr">"icons"</span>: {
+        <span class="hljs-attr">"twitter"</span>: {
+          <span class="hljs-attr">"name"</span>: <span class="hljs-string">"spc_testfile_twitter"</span>,
+          <span class="hljs-attr">"target"</span>: <span class="hljs-string">"#"</span>
+        },
+        <span class="hljs-attr">"instagram"</span>: {
+          <span class="hljs-attr">"name"</span>: <span class="hljs-string">"spc_testfile_instagram"</span>,
+          <span class="hljs-attr">"target"</span>: <span class="hljs-string">"#"</span>
+        },
+        <span class="hljs-attr">"facebook"</span>: {
+          <span class="hljs-attr">"name"</span>: <span class="hljs-string">"spc_testfile_facebook"</span>,
+          <span class="hljs-attr">"target"</span>: <span class="hljs-string">"#"</span>
+        }
+      },
+      <span class="hljs-attr">"contact"</span>: {
+        <span class="hljs-attr">"mail"</span>: <span class="hljs-string">"example@placeholdermail.com"</span>,
+        <span class="hljs-attr">"phone"</span>: <span class="hljs-string">"+XX XX XXX XX XX"</span>
+      }
+    }
+  },
+  <span class="hljs-attr">"spc_fullwidth_heading"</span>: {
+    <span class="hljs-attr">"heading"</span>: <span class="hljs-string">"placeholder"</span>,
+    <span class="hljs-attr">"href"</span>: <span class="hljs-string">"#"</span>
+  },
+  <span class="hljs-attr">"spc_article_excerpts"</span>: {
+    <span class="hljs-attr">"items"</span>: {
+      <span class="hljs-attr">"item1"</span>: {
+        <span class="hljs-attr">"heading"</span>: <span class="hljs-string">"article headline"</span>,
+        <span class="hljs-attr">"ingress"</span>: <span class="hljs-string">"The first XX charachters of article..."</span>,
+        <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Author Name"</span>,
+        <span class="hljs-attr">"date"</span>: <span class="hljs-string">"2017-01-01"</span>,
+        <span class="hljs-attr">"image"</span>: <span class="hljs-string">"https://larsson-postcardapp.herokuapp.com/img/slides/1.jpg"</span>,
+        <span class="hljs-attr">"category"</span>: <span class="hljs-string">"none"</span>,
+        <span class="hljs-attr">"tags"</span>: [
+          <span class="hljs-string">"tags"</span>,
+          <span class="hljs-string">"tags"</span>
+        ]
+      },
+      <span class="hljs-attr">"item2"</span>: {
+        <span class="hljs-attr">"heading"</span>: <span class="hljs-string">"article headline"</span>,
+        <span class="hljs-attr">"ingress"</span>: <span class="hljs-string">"The first XX charachters of article..."</span>,
+        <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Author Name"</span>,
+        <span class="hljs-attr">"date"</span>: <span class="hljs-string">"2017-01-01"</span>,
+        <span class="hljs-attr">"image"</span>: <span class="hljs-string">"https://larsson-postcardapp.herokuapp.com/img/slides/4.jpg"</span>,
+        <span class="hljs-attr">"category"</span>: <span class="hljs-string">"none"</span>,
+        <span class="hljs-attr">"tags"</span>: [
+          <span class="hljs-string">"tags"</span>,
+          <span class="hljs-string">"tags"</span>,
+          <span class="hljs-string">"tags"</span>
+        ]
+      },
+      <span class="hljs-attr">"item3"</span>: {
+        <span class="hljs-attr">"heading"</span>: <span class="hljs-string">"article headline"</span>,
+        <span class="hljs-attr">"ingress"</span>: <span class="hljs-string">"The first XX charachters of article..."</span>,
+        <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Author Name"</span>,
+        <span class="hljs-attr">"date"</span>: <span class="hljs-string">"2017-01-01"</span>,
+        <span class="hljs-attr">"image"</span>: <span class="hljs-string">"https://larsson-postcardapp.herokuapp.com/img/slides/5.jpg"</span>,
+        <span class="hljs-attr">"category"</span>: <span class="hljs-string">"none"</span>,
+        <span class="hljs-attr">"tags"</span>: [
+          <span class="hljs-string">"tags"</span>,
+          <span class="hljs-string">"tags"</span>,
+          <span class="hljs-string">"tags"</span>,
+          <span class="hljs-string">"tags"</span>
+        ]
+      },
+      <span class="hljs-attr">"item4"</span>: {
+        <span class="hljs-attr">"heading"</span>: <span class="hljs-string">"article headline"</span>,
+        <span class="hljs-attr">"ingress"</span>: <span class="hljs-string">"The first XX charachters of article..."</span>,
+        <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Author Name"</span>,
+        <span class="hljs-attr">"date"</span>: <span class="hljs-string">"2017-01-01"</span>,
+        <span class="hljs-attr">"image"</span>: <span class="hljs-string">"https://larsson-postcardapp.herokuapp.com/img/slides/1.jpg"</span>,
+        <span class="hljs-attr">"category"</span>: <span class="hljs-string">"none"</span>,
+        <span class="hljs-attr">"tags"</span>: [
+          <span class="hljs-string">"tags"</span>,
+          <span class="hljs-string">"tags"</span>
+        ]
+      },
+      <span class="hljs-attr">"item5"</span>: {
+        <span class="hljs-attr">"heading"</span>: <span class="hljs-string">"article headline"</span>,
+        <span class="hljs-attr">"ingress"</span>: <span class="hljs-string">"The first XX charachters of article..."</span>,
+        <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Author Name"</span>,
+        <span class="hljs-attr">"date"</span>: <span class="hljs-string">"2017-01-01"</span>,
+        <span class="hljs-attr">"image"</span>: <span class="hljs-string">"https://larsson-postcardapp.herokuapp.com/img/slides/4.jpg"</span>,
+        <span class="hljs-attr">"category"</span>: <span class="hljs-string">"none"</span>,
+        <span class="hljs-attr">"tags"</span>: [
+          <span class="hljs-string">"tags"</span>,
+          <span class="hljs-string">"tags"</span>,
+          <span class="hljs-string">"tags"</span>
+        ]
+      },
+      <span class="hljs-attr">"item6"</span>: {
+        <span class="hljs-attr">"heading"</span>: <span class="hljs-string">"article headline"</span>,
+        <span class="hljs-attr">"ingress"</span>: <span class="hljs-string">"The first XX charachters of article..."</span>,
+        <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Author Name"</span>,
+        <span class="hljs-attr">"date"</span>: <span class="hljs-string">"2017-01-01"</span>,
+        <span class="hljs-attr">"image"</span>: <span class="hljs-string">"https://larsson-postcardapp.herokuapp.com/img/slides/5.jpg"</span>,
+        <span class="hljs-attr">"category"</span>: <span class="hljs-string">"none"</span>,
+        <span class="hljs-attr">"tags"</span>: [
+          <span class="hljs-string">"tags"</span>,
+          <span class="hljs-string">"tags"</span>,
+          <span class="hljs-string">"tags"</span>,
+          <span class="hljs-string">"tags"</span>
+        ]
+      },
+      <span class="hljs-attr">"item7"</span>: {
+        <span class="hljs-attr">"heading"</span>: <span class="hljs-string">"article headline"</span>,
+        <span class="hljs-attr">"ingress"</span>: <span class="hljs-string">"The first XX charachters of article..."</span>,
+        <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Author Name"</span>,
+        <span class="hljs-attr">"date"</span>: <span class="hljs-string">"2017-01-01"</span>,
+        <span class="hljs-attr">"image"</span>: <span class="hljs-string">"https://larsson-postcardapp.herokuapp.com/img/slides/1.jpg"</span>,
+        <span class="hljs-attr">"category"</span>: <span class="hljs-string">"none"</span>,
+        <span class="hljs-attr">"tags"</span>: [
+          <span class="hljs-string">"tags"</span>,
+          <span class="hljs-string">"tags"</span>
+        ]
+      },
+      <span class="hljs-attr">"item8"</span>: {
+        <span class="hljs-attr">"heading"</span>: <span class="hljs-string">"article headline"</span>,
+        <span class="hljs-attr">"ingress"</span>: <span class="hljs-string">"The first XX charachters of article..."</span>,
+        <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Author Name"</span>,
+        <span class="hljs-attr">"date"</span>: <span class="hljs-string">"2017-01-01"</span>,
+        <span class="hljs-attr">"image"</span>: <span class="hljs-string">"https://larsson-postcardapp.herokuapp.com/img/slides/4.jpg"</span>,
+        <span class="hljs-attr">"category"</span>: <span class="hljs-string">"none"</span>,
+        <span class="hljs-attr">"tags"</span>: [
+          <span class="hljs-string">"tags"</span>,
+          <span class="hljs-string">"tags"</span>,
+          <span class="hljs-string">"tags"</span>
+        ]
+      },
+      <span class="hljs-attr">"item9"</span>: {
+        <span class="hljs-attr">"heading"</span>: <span class="hljs-string">"article headline"</span>,
+        <span class="hljs-attr">"ingress"</span>: <span class="hljs-string">"The first XX charachters of article..."</span>,
+        <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Author Name"</span>,
+        <span class="hljs-attr">"date"</span>: <span class="hljs-string">"2017-01-01"</span>,
+        <span class="hljs-attr">"image"</span>: <span class="hljs-string">"https://larsson-postcardapp.herokuapp.com/img/slides/5.jpg"</span>,
+        <span class="hljs-attr">"category"</span>: <span class="hljs-string">"none"</span>,
+        <span class="hljs-attr">"tags"</span>: [
+          <span class="hljs-string">"tags"</span>,
+          <span class="hljs-string">"tags"</span>,
+          <span class="hljs-string">"tags"</span>,
+          <span class="hljs-string">"tags"</span>
+        ]
+      }
+    }
+  },
+  <span class="hljs-attr">"spc_inline_menu"</span>: {
+    <span class="hljs-attr">"button"</span>: {
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"menu"</span>
+    },
+    <span class="hljs-attr">"items"</span>: {
+      <span class="hljs-attr">"item1"</span>: {
+        <span class="hljs-attr">"text"</span>: <span class="hljs-string">"menu item"</span>,
+        <span class="hljs-attr">"target"</span>: <span class="hljs-string">"#"</span>,
+        <span class="hljs-attr">"items"</span>: {
+          <span class="hljs-attr">"item1"</span>: <span class="hljs-string">"sub menu item"</span>,
+          <span class="hljs-attr">"item2"</span>: <span class="hljs-string">"sub menu item"</span>,
+          <span class="hljs-attr">"item3"</span>: <span class="hljs-string">"sub menu item"</span>
+        }
+      },
+      <span class="hljs-attr">"item2"</span>: {
+        <span class="hljs-attr">"text"</span>: <span class="hljs-string">"menu item"</span>,
+        <span class="hljs-attr">"target"</span>: <span class="hljs-string">"#"</span>,
+        <span class="hljs-attr">"items"</span>: {
+          <span class="hljs-attr">"item1"</span>: <span class="hljs-string">"sub menu item"</span>,
+          <span class="hljs-attr">"item2"</span>: <span class="hljs-string">"sub menu item"</span>,
+          <span class="hljs-attr">"item3"</span>: <span class="hljs-string">"sub menu item"</span>
+        }
+      },
+      <span class="hljs-attr">"item3"</span>: {
+        <span class="hljs-attr">"text"</span>: <span class="hljs-string">"menu item"</span>,
+        <span class="hljs-attr">"target"</span>: <span class="hljs-string">"#"</span>,
+        <span class="hljs-attr">"items"</span>: {
+          <span class="hljs-attr">"item1"</span>: <span class="hljs-string">"sub menu item"</span>,
+          <span class="hljs-attr">"item2"</span>: <span class="hljs-string">"sub menu item"</span>,
+          <span class="hljs-attr">"item3"</span>: <span class="hljs-string">"sub menu item"</span>
+        }
+      },
+      <span class="hljs-attr">"item4"</span>: {
+        <span class="hljs-attr">"text"</span>: <span class="hljs-string">"menu item"</span>,
+        <span class="hljs-attr">"target"</span>: <span class="hljs-string">"#"</span>,
+        <span class="hljs-attr">"items"</span>: {
+          <span class="hljs-attr">"item1"</span>: <span class="hljs-string">"sub menu item"</span>,
+          <span class="hljs-attr">"item2"</span>: <span class="hljs-string">"sub menu item"</span>,
+          <span class="hljs-attr">"item3"</span>: <span class="hljs-string">"sub menu item"</span>
+        }
+      },
+      <span class="hljs-attr">"item5"</span>: {
+        <span class="hljs-attr">"text"</span>: <span class="hljs-string">"menu item"</span>,
+        <span class="hljs-attr">"target"</span>: <span class="hljs-string">"#"</span>,
+        <span class="hljs-attr">"items"</span>: {
+          <span class="hljs-attr">"item1"</span>: <span class="hljs-string">"sub menu item"</span>,
+          <span class="hljs-attr">"item2"</span>: <span class="hljs-string">"sub menu item"</span>,
+          <span class="hljs-attr">"item3"</span>: <span class="hljs-string">"sub menu item"</span>
+        }
+      },
+      <span class="hljs-attr">"item6"</span>: {
+        <span class="hljs-attr">"text"</span>: <span class="hljs-string">"menu item"</span>,
+        <span class="hljs-attr">"target"</span>: <span class="hljs-string">"#"</span>,
+        <span class="hljs-attr">"items"</span>: {
+          <span class="hljs-attr">"item1"</span>: <span class="hljs-string">"sub menu item"</span>,
+          <span class="hljs-attr">"item2"</span>: <span class="hljs-string">"sub menu item"</span>,
+          <span class="hljs-attr">"item3"</span>: <span class="hljs-string">"sub menu item"</span>
+        }
+      },
+      <span class="hljs-attr">"item7"</span>: {
+        <span class="hljs-attr">"text"</span>: <span class="hljs-string">"menu item"</span>,
+        <span class="hljs-attr">"target"</span>: <span class="hljs-string">"#"</span>,
+        <span class="hljs-attr">"items"</span>: {
+          <span class="hljs-attr">"item1"</span>: <span class="hljs-string">"sub menu item"</span>,
+          <span class="hljs-attr">"item2"</span>: <span class="hljs-string">"sub menu item"</span>,
+          <span class="hljs-attr">"item3"</span>: <span class="hljs-string">"sub menu item"</span>
+        }
+      }
+    }
+  }
+}</pre>
+            
+        
+    </code>
+</div>
+
+    
+    
+
+
+
+
+    
+    <div class="Browser-panel" data-role="tab-panel" id="browser-bf3cbca0b744dd61ed84b06aea466c6d-panel-info">
+    <ul class="Meta">
+        <li class="Meta-item">
+            <strong class="Meta-key">Handle:</strong>
+            <span class="Meta-value">@blogpage</span>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Preview:</strong>
+            <span class="Meta-value">
+                <ul>
+                    <li><a data-no-pjax href="../preview/blogpage.html"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                    <li><a data-no-pjax href="../render/blogpage.html"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                </ul>
+            </span>
+        </li>
+        <li class="Meta-item">
+            <strong class="Meta-key">Filesystem Path:</strong>
+            <span class="Meta-value">views/blogpage.twig</span>
+        </li>
+        
+        
+    </ul>
+</div>
+
+    
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-bf3cbca0b744dd61ed84b06aea466c6d-panel-notes">
+    <div class="Prose Prose--condensed">
+        
+        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
+        
+    </div>
+</div>
+
+    
+
+</div>
+
+</div>
+
+
+    
+
+</div>
+
+
+            </div>
+        </div>
+
+        <div class="Frame-handle" data-role="frame-resize-handle"></div>
+        
+        <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
+            <nav class="Navigation">
+
+    
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-docs">
+    <h3 class="Tree-title">documentation</h3>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/introduction.html" data-pjax>
+                <span>Introduction</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/spc_article.html" data-pjax>
+                <span>Spc Article</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/spc_article_excerpts.html" data-pjax>
+                <span>Spc Article Excerpts</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/spc_fullwidth_heading.html" data-pjax>
+                <span>Spc Fullwidth Heading</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/spc_hero_article.html" data-pjax>
+                <span>Spc Hero Article</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/spc_inline_menu.html" data-pjax>
+                <span>Spc Inline Menu</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/spc_more_button.html" data-pjax>
+                <span>Spc More Button</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/spc_simple_footer.html" data-pjax>
+                <span>Spc Simple Footer</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/spc_social_widget.html" data-pjax>
+                <span>Spc Social Widget</span>
+                
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+
+    
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-components">
+    <h3 class="Tree-title">components</h3>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
+                <span>Blogpage</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="spc_article.html" data-pjax>
+                <span>Spc Article</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="spc_article_excerpts.html" data-pjax>
+                <span>Spc Article Excerpts</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="spc_fullwidth_heading.html" data-pjax>
+                <span>Spc Fullwidth Heading</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="spc_hero_article.html" data-pjax>
+                <span>Spc Hero Article</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="spc_inline_menu.html" data-pjax>
+                <span>Spc Inline Menu</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="spc_more_button.html" data-pjax>
+                <span>Spc More Button</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="spc_simple_footer.html" data-pjax>
+                <span>Spc Simple Footer</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="spc_social_widget.html" data-pjax>
+                <span>Spc Social Widget</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="startpage.html" data-pjax>
+                <span>Startpage</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+
+</nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.1.0"></script>
+
+
+
+</body>
+</html>

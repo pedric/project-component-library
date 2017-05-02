@@ -4,85 +4,85 @@
 		"spc_article_excerpts": {
 			"items": {
 				"item1": {
-					"heading": "Budapest heading",
+					"heading": "article headline",
 					"ingress": "The first XX charachters of article...",
-					"author": "Fredrik Larsson",
-					"date": "2017-04-06",
-					"image": "http://i.telegraph.co.uk/multimedia/archive/02813/grand-budapest_2813768b.jpg",
+					"author": "Author Name",
+					"date": "2017-01-01",
+					"image": "https://larsson-postcardapp.herokuapp.com/img/slides/1.jpg",
 					"category": "none",
-					"tags": ["music", "food"]
+					"tags": ["tags", "tags"]
 				},
 				"item2": {
-					"heading": "Heading Testing",
+					"heading": "article headline",
 					"ingress": "The first XX charachters of article...",
-					"author": "Lars Fredriksson",
-					"date": "2017-07-01",
-					"image": "http://babelmalmo.se/wp-content/2015/03/nightmen.jpg",
+					"author": "Author Name",
+					"date": "2017-01-01",
+					"image": "https://larsson-postcardapp.herokuapp.com/img/slides/4.jpg",
 					"category": "none",
-					"tags": ["music", "food"]
+					"tags": ["tags", "tags", "tags"]
 				},
 				"item3": {
-					"heading": "Testing heading for third article",
+					"heading": "article headline",
 					"ingress": "The first XX charachters of article...",
-					"author": "Fredde Larsån",
-					"date": "2017-10-18",
-					"image": "http://www.bjurfors.se/globalassets/omradesbilder/skane/oresundsregionen/oresundsregionenstart.jpg",
+					"author": "Author Name",
+					"date": "2017-01-01",
+					"image": "https://larsson-postcardapp.herokuapp.com/img/slides/5.jpg",
 					"category": "none",
-					"tags": ["music", "food"]
+					"tags": ["tags", "tags", "tags", "tags"]
 				},
 				"item4": {
-					"heading": "Heading out to test a test",
+					"heading": "article headline",
 					"ingress": "The first XX charachters of article...",
-					"author": "Fred Flinta",
-					"date": "2017-06-26",
-					"image": "http://content.acclaimmag.com/content/uploads/2013/11/ODB.jpg",
+					"author": "Author Name",
+					"date": "2017-01-01",
+					"image": "https://larsson-postcardapp.herokuapp.com/img/slides/1.jpg",
 					"category": "none",
-					"tags": ["music", "food"]
+					"tags": ["tags", "tags"]
 				},
 				"item5": {
-					"heading": "Heads up!",
+					"heading": "article headline",
 					"ingress": "The first XX charachters of article...",
-					"author": "Freddie Cruger",
-					"date": "2017-11-26",
-					"image": "http://storaensoskog.se/dev/wp-content/uploads/2014/12/silverkvist.jpg",
+					"author": "Author Name",
+					"date": "2017-01-01",
+					"image": "https://larsson-postcardapp.herokuapp.com/img/slides/4.jpg",
 					"category": "none",
-					"tags": ["music", "food"]
+					"tags": ["tags", "tags", "tags"]
 				},
 				"item6": {
-					"heading": "Head of a headless test",
+					"heading": "article headline",
 					"ingress": "The first XX charachters of article...",
-					"author": "Freds Furste",
-					"date": "2017-12-06",
-					"image": "https://vignette2.wikia.nocookie.net/flinstones/images/5/54/Flintstones_and_Rubbles1.jpg/revision/latest/scale-to-width-down/588?cb=20121121224124",
+					"author": "Author Name",
+					"date": "2017-01-01",
+					"image": "https://larsson-postcardapp.herokuapp.com/img/slides/5.jpg",
 					"category": "none",
-					"tags": ["music", "food"]
+					"tags": ["tags", "tags", "tags", "tags"]
 				},
 				"item7": {
-					"heading": "Heads ska rulla",
+					"heading": "article headline",
 					"ingress": "The first XX charachters of article...",
-					"author": "Freak Fred",
-					"date": "2017-09-16",
-					"image": "http://dreamicus.com/data/satan/satan-02.jpg",
+					"author": "Author Name",
+					"date": "2017-01-01",
+					"image": "https://larsson-postcardapp.herokuapp.com/img/slides/1.jpg",
 					"category": "none",
-					"tags": ["music", "food"]
+					"tags": ["tags", "tags"]
 				},
 				"item8": {
-					"heading": "vånna heading",
+					"heading": "article headline",
 					"ingress": "The first XX charachters of article...",
-					"author": "Freds Furste",
-					"date": "2017-12-06",
-					"image": "http://cdn-01.rockfoto.nu/imagesbig/20120628_001516_133160.jpg",
+					"author": "Author Name",
+					"date": "2017-01-01",
+					"image": "https://larsson-postcardapp.herokuapp.com/img/slides/4.jpg",
 					"category": "none",
-					"tags": ["music", "food"]
+					"tags": ["tags", "tags", "tags"]
 				},
 				"item9": {
-					"heading": "foxheads",
+					"heading": "article headline",
 					"ingress": "The first XX charachters of article...",
-					"author": "Freak Fred",
-					"date": "2017-09-16",
-					"image": "http://vignette1.wikia.nocookie.net/fantasticmrfox/images/e/ed/MrFox.jpg/revision/latest?cb=20140512194259",
+					"author": "Author Name",
+					"date": "2017-01-01",
+					"image": "https://larsson-postcardapp.herokuapp.com/img/slides/5.jpg",
 					"category": "none",
-					"tags": ["music", "food"]
+					"tags": ["tags", "tags", "tags", "tags"]
 				}
 			}
 		}

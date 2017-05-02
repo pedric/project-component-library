@@ -1,0 +1,26 @@
+<div class="spc_article" data-module="spc_article">
+	<img src="{{ spc_article.image.url }}" alt="{{ spc_article.image.url }}" />
+	<div><p>©{{ spc_article.image.copyright }}</p></div>
+	<article>
+		<div style="background-image: url({{ spc_article.image.url }});">
+			<div>
+				<div>
+					<div>
+						<div>
+							<h1>{{ spc_article.heading }}</h1>
+						</div>
+						<div>
+							<h5>{{ spc_article.author }} {{ spc_article.date }}</h5>
+						</div>
+						<div>
+							<p><strong>{{ spc_article.ingress }}</strong></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-content">
+			<div>{{ spc_article.content }}</div>
+		</div>
+	</article>
+</div>
