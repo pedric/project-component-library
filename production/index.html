@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="themes/mandelbrot/css/black.css?cachebust=1.1.0" type="text/css">
 
 
-<title>Spacecraft Component Library | Spacecraft Component Library</title>
+<title>Spacecraft Component Library Project | Spacecraft Component Library Project</title>
 
 </head>
 <body>
@@ -37,7 +37,7 @@
 </svg>
 
     </button>
-    <a href="" class="Header-title" data-pjax>Spacecraft Component Library</a>
+    <a href="" class="Header-title" data-pjax>Spacecraft Component Library Project</a>
 </div>
 
     </div>
@@ -52,7 +52,7 @@
 
     <div class="Document-header">
         
-        <h1 class="Document-title">Spacecraft Component Library</h1>
+        <h1 class="Document-title">Spacecraft Component Library Project</h1>
         
 
 
@@ -67,59 +67,43 @@
 
 
 
+<p><strong>These components are developed as a test to evaluate a structure and design for components to be compatible with the tasks and distribution also suggested in the same project. Read more about this below, in the sidebar you will find the components, documentation and two examplepages displaying all of the components when forming a page.</strong></p>
 
+<p>Spacecraft is a tool for building websites in which you are in control- of and can work based on components. When working with this method it would be quite handy to be able to develop and reuse these components between projects. This styleguide is part of a project with the aim to find- and implement a way to distribute- and have versioncontrolled components.</p>
 
-<p>You can browse the component library using the navigation on the left.</p>
+<p>To use Spacecraft together with the ready-to-use components, start with cloning this repo: <a href="https://github.com/pedric/spacecraft-starterkit">https://github.com/pedric/spacecraft-starterkit</a>, which is a version of Spacecraft-Starter in where another customised version of Spacecraft lives. This kit are expanded with the tasks for importing components direct to your project with a few commands presented below in the installation guide.</p>
 
-<h3>Component statuses</h3>
-<p>Components and their variants have been given statuses reflecting their state of completion. The available statuses are listed below.</p>
-<table>
-<tr>
-    <th>Label</th>
-    <th>Description</th>
-</tr>
+<p>There is no limitation to what a component is, this styleguide for example, could be fewer components or even one big "page" component or the other way torn down to more even smaller components. But in first hand this is built to test and develop the structure, conventions, distribution etc for components.</p>
 
-<tr>
-    <td>
+<h2>Installation guide</h2>
+<p>Clone/download <a href="https://github.com/pedric/spacecraft-starterkit">Spacecraft Starterkit</a> and run:</p>
 
-<div class="Status Status--tag">
+<code>npm install</code><br /><br />
 
-<label class="Status-label" style="background-color: #FF3333; border-color: #FF3333;">Prototype</label>
+<code>npm install --save < component-name ></code> // To get this actual component downloaded.<br /><br />
 
-</div>
+<code>gulp import --component < component-name ></code>// To get the files into your project.<br /><br />
 
-</td>
-    <td>Do not implement.</td>
-</tr>
+<code>gulp</code>// To start up Spacecraft.<br /><br />
 
-<tr>
-    <td>
+The last step is to import the css, in..
 
-<div class="Status Status--tag">
+<code>./src/scss/components/_components.main.scss</code>
 
-<label class="Status-label" style="background-color: #FF9233; border-color: #FF9233;">WIP</label>
+..add..
 
-</div>
+<code>@import "views/< component-name >/< component-name >";</code>
 
-</td>
-    <td>Work in progress. Implement with caution.</td>
-</tr>
+<h2>The copy/paste</h2>
+<p>Somewhere you will do the "copy/paste", sure you can be developing your component directly and push it to NPM/GIT, but probably you will enhance components while working on them in different projects. In the structure as it is built now you will have to do this "copy/paste" since the import process is copying components into a project and from there one are not working with the original version.</p>
 
-<tr>
-    <td>
-
-<div class="Status Status--tag">
-
-<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Ready</label>
-
-</div>
-
-</td>
-    <td>Ready to implement.</td>
-</tr>
-
-</table>
-
+<h2>Sources</h2>
+<ul>
+	<li><a href="https://github.com/pedric/spacecraft-starterkit">Spacecraft Starterkit</a></li>
+	<li><a href="https://github.com/pedric/spacecraft-projectversion">Spacecraft Module (customised project version)</a></li>
+	<li><a href="https://spc-component-library.herokuapp.com/">Browse components</a></li>
+	<li><a href="">These Components at github</a></li>
+</ul>
 
 
 </div>
@@ -254,6 +238,17 @@
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-examplepages">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Examplepages</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="components/detail/blogpage.html" data-pjax>
@@ -265,7 +260,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -274,6 +269,35 @@
 
 
             </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="components/detail/startpage.html" data-pjax>
+                <span>Startpage</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     
@@ -289,7 +313,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -313,7 +337,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -337,7 +361,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -361,7 +385,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -385,7 +409,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -457,31 +481,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/startpage.html" data-pjax>
-                <span>Startpage</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>

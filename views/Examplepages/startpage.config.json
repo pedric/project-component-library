@@ -1,12 +1,12 @@
 {
-	"status": "wip",
+	"status": "ready",
 	"context": {
 		"spc_hero_article": {
 			"heading": "article headline",
 			"ingress": "The ingress of article shows here. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
 			"author": "Author Name",
 			"date": "2017-01-01",
-			"image": "https://larsson-postcardapp.herokuapp.com/img/slides/1.jpg",
+			"image": "/img/spc_hero_article.jpg",
 			"category": "none",
 			"tags": ["tags", "tags", "tags"]
 		},
@@ -47,7 +47,7 @@
 					"ingress": "The first XX charachters of article...",
 					"author": "Author Name",
 					"date": "2017-01-01",
-					"image": "https://larsson-postcardapp.herokuapp.com/img/slides/1.jpg",
+					"image": "/img/spc_article_excerpts1.jpg",
 					"category": "none",
 					"tags": ["tags", "tags"]
 				},
@@ -56,7 +56,7 @@
 					"ingress": "The first XX charachters of article...",
 					"author": "Author Name",
 					"date": "2017-01-01",
-					"image": "https://larsson-postcardapp.herokuapp.com/img/slides/4.jpg",
+					"image": "/img/spc_article_excerpts2.jpg",
 					"category": "none",
 					"tags": ["tags", "tags", "tags"]
 				},
@@ -65,7 +65,7 @@
 					"ingress": "The first XX charachters of article...",
 					"author": "Author Name",
 					"date": "2017-01-01",
-					"image": "https://larsson-postcardapp.herokuapp.com/img/slides/5.jpg",
+					"image": "/img/spc_article_excerpts3.jpg",
 					"category": "none",
 					"tags": ["tags", "tags", "tags", "tags"]
 				},
@@ -74,7 +74,7 @@
 					"ingress": "The first XX charachters of article...",
 					"author": "Author Name",
 					"date": "2017-01-01",
-					"image": "https://larsson-postcardapp.herokuapp.com/img/slides/1.jpg",
+					"image": "/img/spc_article_excerpts4.jpg",
 					"category": "none",
 					"tags": ["tags", "tags"]
 				},
@@ -83,7 +83,7 @@
 					"ingress": "The first XX charachters of article...",
 					"author": "Author Name",
 					"date": "2017-01-01",
-					"image": "https://larsson-postcardapp.herokuapp.com/img/slides/4.jpg",
+					"image": "/img/spc_article_excerpts5.jpg",
 					"category": "none",
 					"tags": ["tags", "tags", "tags"]
 				},
@@ -92,7 +92,7 @@
 					"ingress": "The first XX charachters of article...",
 					"author": "Author Name",
 					"date": "2017-01-01",
-					"image": "https://larsson-postcardapp.herokuapp.com/img/slides/5.jpg",
+					"image": "/img/spc_article_excerpts6.jpg",
 					"category": "none",
 					"tags": ["tags", "tags", "tags", "tags"]
 				},
@@ -101,7 +101,7 @@
 					"ingress": "The first XX charachters of article...",
 					"author": "Author Name",
 					"date": "2017-01-01",
-					"image": "https://larsson-postcardapp.herokuapp.com/img/slides/1.jpg",
+					"image": "/img/spc_article_excerpts7.jpg",
 					"category": "none",
 					"tags": ["tags", "tags"]
 				},
@@ -110,7 +110,7 @@
 					"ingress": "The first XX charachters of article...",
 					"author": "Author Name",
 					"date": "2017-01-01",
-					"image": "https://larsson-postcardapp.herokuapp.com/img/slides/4.jpg",
+					"image": "/img/spc_article_excerpts8.jpg",
 					"category": "none",
 					"tags": ["tags", "tags", "tags"]
 				},
@@ -119,7 +119,7 @@
 					"ingress": "The first XX charachters of article...",
 					"author": "Author Name",
 					"date": "2017-01-01",
-					"image": "https://larsson-postcardapp.herokuapp.com/img/slides/5.jpg",
+					"image": "/img/spc_article_excerpts9.jpg",
 					"category": "none",
 					"tags": ["tags", "tags", "tags", "tags"]
 				}
