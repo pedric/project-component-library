@@ -73,18 +73,18 @@
 <p>To use Spacecraft together with the ready-to-use components, start with cloning this repo: <a href="https://github.com/pedric/spacecraft-starterkit">https://github.com/pedric/spacecraft-starterkit</a>, which is a version of Spacecraft-Starter in where another customised version of Spacecraft lives. This kit are expanded with the tasks for importing components direct to your project with a few commands presented below in the installation guide.</p>
 <p>There is no limitation to what a component is, this styleguide for example, could be fewer components or even one big “page” component or the other way torn down to more even smaller components. But in first hand this is built to test and develop the structure, conventions, distribution etc for components.</p>
 <h2 id="installation-guide">Installation guide</h2>
-<p>Clone/download <a href="https://github.com/pedric/spacecraft-starterkit">Spacecraft Starterkit</a> and run:</p>
+<h3 id="spacecraft-starterkit">Spacecraft Starterkit</h3>
+<p>If you have not yet installed <a href="https://github.com/pedric/spacecraft-starterkit">Spacecraft Starterkit</a> , do so by running:</p>
+<p><code>git clone git@github.com:pedric/spacecraft-starterkit.git</code></p>
+<p><code>cd spacecraft-starterkit</code></p>
 <p><code>npm install</code></p>
-<p><code>npm install --save &lt;component-name&gt;</code>
-// To get this actual component downloaded.</p>
-<p><code>gulp import --component &lt;component-name&gt;</code>
-// To get the files into your project.</p>
-<p><code>gulp</code>
-// To start up Spacecraft.</p>
-<p>The last step is to import the css, in..</p>
+<h3 id="spc_article">spc_article</h3>
+<p>If you have already installed <a href="https://github.com/pedric/spacecraft-starterkit">Spacecraft Starterkit</a>, run:</p>
+<p><code>npm install --save &lt; component-name &gt; &amp;&amp; gulp import --component &lt; component-name &gt;</code></p>
+<p>And don’t forget to import the css by adding:</p>
+<p><code>@import &quot;views/&lt; component-name &gt;/&lt; component-name &gt;&quot;;</code></p>
+<p>in</p>
 <p><code>./src/scss/components/_components.main.scss</code></p>
-<p>..add..</p>
-<p><code>@import &quot;views/&lt;component-name&gt;/&lt;component-name&gt;&quot;;</code></p>
 <h2 id="the-copy-paste">The copy/paste</h2>
 <p>Somewhere you will do the “copy/paste”, sure you can be developing your component directly and push it to NPM/GIT, but probably you will enhance components while working on them in different projects. In the structure as it is built now you will have to do this “copy/paste” since the import process is copying components into a project and from there one are not working with the original version.</p>
 <h2 id="sources">Sources</h2>
@@ -132,86 +132,6 @@
         <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
             <a class="Tree-entityLink" href="" data-pjax>
                 <span>Introduction</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="spc_article.html" data-pjax>
-                <span>Spc Article</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="spc_article_excerpts.html" data-pjax>
-                <span>Spc Article Excerpts</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="spc_fullwidth_heading.html" data-pjax>
-                <span>Spc Fullwidth Heading</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="spc_hero_article.html" data-pjax>
-                <span>Spc Hero Article</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="spc_inline_menu.html" data-pjax>
-                <span>Spc Inline Menu</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="spc_more_button.html" data-pjax>
-                <span>Spc More Button</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="spc_simple_footer.html" data-pjax>
-                <span>Spc Simple Footer</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="spc_social_widget.html" data-pjax>
-                <span>Spc Social Widget</span>
                 
             </a>
         </li>

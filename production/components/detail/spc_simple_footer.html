@@ -322,7 +322,26 @@
     <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-4ee6c2a25506af6f027df0999666fd94-panel-notes">
     <div class="Prose Prose--condensed">
         
-        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
+        <p><em>- A supersimple footer</em></p>
+<p><em>- Designed as a Spacecraft Starterkit compatible component</em></p>
+<h2 id="quick-start">Quick start</h2>
+<p>No config.json needed, set your name in the <code>data-spc_simple_footer</code> attribute like this: <code>data-spc_simple_footer=&quot;company name&quot;</code> in spc_simple_footer.twig.</p>
+<p>Change the color variable or it’s value in scss-file to customise. By default it´s the same style for p-, span- and a elements.</p>
+<p>The span element will contain <code>@YEAR</code> + <code>name</code> set as described above.</p>
+<h2 id="install">Install</h2>
+<h3 id="spacecraft-starterkit">Spacecraft Starterkit</h3>
+<p>If you have not yet installed <a href="https://github.com/pedric/spacecraft-starterkit">Spacecraft Starterkit</a> , do so by running:</p>
+<p><code>git clone git@github.com:pedric/spacecraft-starterkit.git</code></p>
+<p><code>cd spacecraft-starterkit</code></p>
+<p><code>npm install</code></p>
+<h3 id="spc_article">spc_article</h3>
+<p>If you have already installed <a href="https://github.com/pedric/spacecraft-starterkit">Spacecraft Starterkit</a>, run:</p>
+<p><code>npm install --save spc_simple_footer &amp;&amp; gulp import --component spc_simple_footer</code></p>
+<p>And don’t forget to import the css by adding:</p>
+<p><code>@import &quot;views/spc_simple_footer/spc_simple_footer&quot;;</code></p>
+<p>in</p>
+<p><code>./src/scss/components/_components.main.scss</code></p>
+
         
     </div>
 </div>
@@ -360,86 +379,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../../docs/introduction.html" data-pjax>
                 <span>Introduction</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../docs/spc_article.html" data-pjax>
-                <span>Spc Article</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../docs/spc_article_excerpts.html" data-pjax>
-                <span>Spc Article Excerpts</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../docs/spc_fullwidth_heading.html" data-pjax>
-                <span>Spc Fullwidth Heading</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../docs/spc_hero_article.html" data-pjax>
-                <span>Spc Hero Article</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../docs/spc_inline_menu.html" data-pjax>
-                <span>Spc Inline Menu</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../docs/spc_more_button.html" data-pjax>
-                <span>Spc More Button</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../docs/spc_simple_footer.html" data-pjax>
-                <span>Spc Simple Footer</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../docs/spc_social_widget.html" data-pjax>
-                <span>Spc Social Widget</span>
                 
             </a>
         </li>
